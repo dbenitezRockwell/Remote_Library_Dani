@@ -3,6 +3,7 @@ Type: FolderType
 Children:
 - Name: VariableSyncronizer
   Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"c# actualiza las tags de un directorio sin necesidad de representarlas gráficamente"}
   Children:
   - Name: VariableSyncronizer
     Id: g=8aff4c64eae8e2389276360d04dec05b
