@@ -19,3 +19,17 @@ Children:
         Type: PropertyType
         DataType: NodeId
         Value: {"IdType":0,"Id":0,"Namespace":-1}
+- Name: VariableGenerator
+  Type: ObjectLibraryItem
+  Children:
+  - Name: VariableGenerator
+    Id: g=8e06f5926662535514f9d5b0da8a75e9
+    Supertype: NetLogic
+    ReferenceType: HasComponent
+- Name: VariableGenerator_SalvaPantalla
+  Type: ObjectLibraryItem
+  Children:
+  - Name: VariableGenerator_SalvaPantalla
+    Id: g=d56e38ddf5ead5d0a25c191c5b7dcffa
+    Supertype: NetLogic
+    ReferenceType: HasComponent
