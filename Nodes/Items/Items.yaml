@@ -28,8 +28,26 @@ Children:
     ReferenceType: HasComponent
 - Name: VariableGenerator_SalvaPantalla
   Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"Genera valores X Y para modificar la posición de un objeto aleatoriamente.\n\nEjemplo: Imagen del Salvapantallas."}
   Children:
   - Name: VariableGenerator_SalvaPantalla
     Id: g=d56e38ddf5ead5d0a25c191c5b7dcffa
     Supertype: NetLogic
     ReferenceType: HasComponent
+- Name: CurrentDateTimeFormatted
+  Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"Codigo para modificar y que envia la fecha al PLC en formato UDT DateTime"}
+  Children:
+  - Name: CurrentDateTimeFormatted
+    Id: g=18e0dd6b37834431be358ee8a6234388
+    Supertype: NetLogic
+    ReferenceType: HasComponent
+    Children:
+    - Name: Time
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "1601-01-01T00:00:00.0000000"
+    - Name: UTCTime
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "1601-01-01T00:00:00.0000000"
