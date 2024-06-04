@@ -51,3 +51,43 @@ Children:
       Type: BaseDataVariableType
       DataType: DateTime
       Value: "1601-01-01T00:00:00.0000000"
+- Name: DB_DateTime2PLC
+  Type: ObjectLibraryItem
+  Children:
+  - Name: DB_DateTime2PLC
+    Id: g=b035fe0fb46115b4c190ea377da9eb2f
+    Supertype: NetLogic
+    ReferenceType: HasComponent
+    Children:
+    - Name: Time
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "1601-01-01T00:00:00.0000000"
+    - Name: UTCTime
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "1601-01-01T00:00:00.0000000"
+    - Name: Ano
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Mes
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Dia
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Hora
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Minuto
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Segundo
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
