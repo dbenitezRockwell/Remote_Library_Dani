@@ -91,3 +91,80 @@ Children:
       Type: BaseDataVariableType
       DataType: Int32
       Value: 0
+- Name: VariableGenerator_SalvaPantalla_V2
+  Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"Genera valores X Y para modificar la posición de un objeto aleatoriamente.\nUsa Variables propias del C# para no usar variables del Model\n\n\nEjemplo: Imagen del Salvapantallas."}
+  Children:
+  - Name: VariableGenerator_SalvaPantalla_V2
+    Id: g=a5807fa40ab21141f908204584d28d05
+    Supertype: NetLogic
+    ReferenceType: HasComponent
+    Children:
+    - Name: I_TamanoX
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 500
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/Daniel_SalvaPantalla_Dina_v2/Model/MainWindow_AuxTags/MainWindow_Width_atPowerUp"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: I_TamanoY
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/Daniel_SalvaPantalla_Dina_v2/Model/MainWindow_AuxTags/MainWindow_Height_atPowerUp"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: O_PosX
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: O_PosY
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: I_TamanoImagenX
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Imagen/Width"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: I_TamanoImagenY
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Imagen/Height"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
