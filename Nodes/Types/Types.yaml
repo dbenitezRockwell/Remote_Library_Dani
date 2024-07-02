@@ -1,2 +1,105 @@
 Name: Types
 Type: FolderType
+Children:
+- Name: raC_btnLongClick
+  Id: g=e5222533e057628f905fd33dc3292c6e
+  Supertype: Button
+  ReferenceType: HasComponent
+  Children:
+  - Name: Text
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    ModellingRule: Optional
+    Value: {"LocaleId":"en-US","Text":"Button1"}
+  - Name: raC_btnLongClickRuntime
+    Type: NetLogic
+    Children:
+    - Name: Clicked
+      Type: MethodInvocation
+      Children:
+      - Class: Reference
+        Target: ns=2;i=98
+        Direction: Forward
+      - Name: ObjectPointer
+        Type: NodePointer
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType"
+      - Name: Method
+        Type: BaseDataVariableType
+        DataType: String
+    - Name: LongClicked
+      Type: MethodInvocation
+      Children:
+      - Class: Reference
+        Target: ns=2;i=98
+        Direction: Forward
+      - Name: ObjectPointer
+        Type: NodePointer
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType"
+      - Name: Method
+        Type: BaseDataVariableType
+        DataType: String
+  - Name: cfgTimespan
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 500
+- Name: raC_btnDoubleClick
+  Id: g=ac5cfe15f775d7630cc7e954cc02830e
+  Supertype: Button
+  ReferenceType: HasComponent
+  Children:
+  - Name: Text
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    ModellingRule: Optional
+    Value: {"LocaleId":"en-US","Text":"Button1"}
+  - Name: raC_btnDoubleClickRuntime
+    Type: NetLogic
+    Children:
+    - Name: Clicked
+      Type: MethodInvocation
+      Children:
+      - Class: Reference
+        Target: ns=2;i=98
+        Direction: Forward
+      - Name: ObjectPointer
+        Type: NodePointer
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType"
+      - Name: Method
+        Type: BaseDataVariableType
+        DataType: String
+    - Name: DoubleClicked
+      Type: MethodInvocation
+      Children:
+      - Class: Reference
+        Target: ns=2;i=98
+        Direction: Forward
+      - Name: ObjectPointer
+        Type: NodePointer
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType"
+      - Name: Method
+        Type: BaseDataVariableType
+        DataType: String
+  - Name: cfgTimespan
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 250

@@ -80,46 +80,6 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt32
     Value: 1
-- Name: DB_DateTime2PLC
-  Type: ObjectLibraryItem
-  Children:
-  - Name: DB_DateTime2PLC
-    Id: g=b035fe0fb46115b4c190ea377da9eb2f
-    Supertype: NetLogic
-    ReferenceType: HasComponent
-    Children:
-    - Name: Time
-      Type: BaseDataVariableType
-      DataType: DateTime
-    - Name: UTCTime
-      Type: BaseDataVariableType
-      DataType: DateTime
-    - Name: Ano
-      Type: BaseDataVariableType
-      DataType: Int32
-    - Name: Mes
-      Type: BaseDataVariableType
-      DataType: Int32
-    - Name: Dia
-      Type: BaseDataVariableType
-      DataType: Int32
-    - Name: Hora
-      Type: BaseDataVariableType
-      DataType: Int32
-    - Name: Minuto
-      Type: BaseDataVariableType
-      DataType: Int32
-    - Name: Segundo
-      Type: BaseDataVariableType
-      DataType: Int32
-  - Name: LibraryItemGuid
-    Type: BaseDataVariableType
-    DataType: Guid
-    Value: "56213c6dc6abee7669c9f9314723f37a"
-  - Name: LibraryItemVersion
-    Type: BaseDataVariableType
-    DataType: UInt32
-    Value: 1
 - Name: VariableGenerator_SalvaPantalla_V2
   Type: ObjectLibraryItem
   Description: {"LocaleId":"","Text":"Genera valores X Y para modificar la posición de un objeto aleatoriamente.\nUsa Variables propias del C# para no usar variables del Model\n\n\nEjemplo: Imagen del Salvapantallas."}
@@ -788,3 +748,266 @@ Children:
       DataType: Boolean
       ModellingRule: Optional
       Value: true
+- Name: raC_btnLongClick1
+  Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"20240702 \nBoton progragamado por RA para detectar el LONGCLICKED"}
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "773acb5d3f622366ac36f3dcd17362f9"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: raC_btnLongClick1
+    Id: g=11eb153aac9361800edf0559a17e11a2
+    Supertype: raC_btnLongClick
+    ReferenceType: HasComponent
+    Children:
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 400.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 160.0
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"long click"}
+    - Name: raC_btnLongClickRuntime
+      Type: NetLogic
+      Children:
+      - Name: Clicked
+        Type: MethodInvocation
+        Children:
+        - Class: Reference
+          Target: ns=2;i=98
+          Direction: Forward
+        - Name: ObjectPointer
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/Commands/VariableCommands"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+        - Name: Method
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Toggle"
+        - Name: InputArguments
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Description: {"NamespaceIndex":2,"TextId":"ToggleVariableToModifyDescription"}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../LED1/Active@NodeId"
+          - Name: ArrayIndex
+            Type: BaseDataVariableType
+            DataType: UInt32
+            Description: {"NamespaceIndex":2,"TextId":"ToggleArrayIndexDescription"}
+            ValueRank: ScalarOrOneDimension
+      - Name: LongClicked
+        Type: MethodInvocation
+        Children:
+        - Class: Reference
+          Target: ns=2;i=98
+          Direction: Forward
+        - Name: ObjectPointer
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/Commands/VariableCommands"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+        - Name: Method
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Toggle"
+        - Name: InputArguments
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Description: {"NamespaceIndex":2,"TextId":"ToggleVariableToModifyDescription"}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../LED2/Active@NodeId"
+          - Name: ArrayIndex
+            Type: BaseDataVariableType
+            DataType: UInt32
+            Description: {"NamespaceIndex":2,"TextId":"ToggleArrayIndexDescription"}
+            ValueRank: ScalarOrOneDimension
+    - Name: cfgTimespan
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 500
+- Name: raC_btnDoubleClick1
+  Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"20240702\nBoton programado por RA para detectar el DoubleClick"}
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "57f9b6619b749a52ae374ca9132f7a0b"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: raC_btnDoubleClick1
+    Id: g=3db4bbc70230924eb987140e5bf871c6
+    Supertype: raC_btnDoubleClick
+    ReferenceType: HasComponent
+    Children:
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 376.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 465.0
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"double click"}
+    - Name: raC_btnDoubleClickRuntime
+      Type: NetLogic
+      Children:
+      - Name: Clicked
+        Type: MethodInvocation
+        Children:
+        - Class: Reference
+          Target: ns=2;i=98
+          Direction: Forward
+        - Name: ObjectPointer
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/Commands/VariableCommands"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+        - Name: Method
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Toggle"
+        - Name: InputArguments
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Description: {"NamespaceIndex":2,"TextId":"ToggleVariableToModifyDescription"}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../LED3/Active@NodeId"
+          - Name: ArrayIndex
+            Type: BaseDataVariableType
+            DataType: UInt32
+            Description: {"NamespaceIndex":2,"TextId":"ToggleArrayIndexDescription"}
+            ValueRank: ScalarOrOneDimension
+      - Name: DoubleClicked
+        Type: MethodInvocation
+        Children:
+        - Class: Reference
+          Target: ns=2;i=98
+          Direction: Forward
+        - Name: ObjectPointer
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/Commands/VariableCommands"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+        - Name: Method
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Toggle"
+        - Name: InputArguments
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Description: {"NamespaceIndex":2,"TextId":"ToggleVariableToModifyDescription"}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../LED4/Active@NodeId"
+          - Name: ArrayIndex
+            Type: BaseDataVariableType
+            DataType: UInt32
+            Description: {"NamespaceIndex":2,"TextId":"ToggleArrayIndexDescription"}
+            ValueRank: ScalarOrOneDimension
+    - Name: cfgTimespan
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 250
+- Name: DB_ClockLogic_Reducido
+  Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"20240702\nDESCRIPTION\nA NetLogic that displays the date and time.  Reducido con menos variables como ejemplo.\n\nSETUP\n- Drop this widget in your project and assign a label's text property to:\n-- the Time property to display the current Local time at runtime\n-- the UTCTime property to display current UTC time at runtime\n\nThe UTCTime property can also be used into an expression evaluator together with {Session}/TimeZoneOffset to display the current session time."}
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "d55a753f7da8edaad5e9ad2fb5cf36bf"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: DB_ClockLogic_Reducido
+    Id: g=be91dc86d14fa0c55e3e35d374622b1e
+    Supertype: NetLogic
+    ReferenceType: HasComponent
+    Children:
+    - Name: Time
+      Type: BaseDataVariableType
+      DataType: DateTime
+    - Name: UTCTime
+      Type: BaseDataVariableType
+      DataType: DateTime
+    - Name: Ano
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Mes
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Dia
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Hora
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Minuto
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Segundo
+      Type: BaseDataVariableType
+      DataType: Int32
