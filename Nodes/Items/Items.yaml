@@ -18,7 +18,14 @@ Children:
       - Name: Kind
         Type: PropertyType
         DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "471440ad7d93c853ffc551b8d05be0c8"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
 - Name: VariableGenerator
   Type: ObjectLibraryItem
   Children:
@@ -26,6 +33,14 @@ Children:
     Id: g=8e06f5926662535514f9d5b0da8a75e9
     Supertype: NetLogic
     ReferenceType: HasComponent
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "62588b4c4903acae0fadb30b5abf99e0"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
 - Name: VariableGenerator_SalvaPantalla
   Type: ObjectLibraryItem
   Description: {"LocaleId":"","Text":"Genera valores X Y para modificar la posición de un objeto aleatoriamente.\n\nEjemplo: Imagen del Salvapantallas."}
@@ -34,6 +49,14 @@ Children:
     Id: g=d56e38ddf5ead5d0a25c191c5b7dcffa
     Supertype: NetLogic
     ReferenceType: HasComponent
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "21f68c8a9326b3564d25d601fc41fe63"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
 - Name: CurrentDateTimeFormatted
   Type: ObjectLibraryItem
   Description: {"LocaleId":"","Text":"Contenedor con imagenes y codigo c# para dar movimiento a una imagen"}
@@ -46,11 +69,17 @@ Children:
     - Name: Time
       Type: BaseDataVariableType
       DataType: DateTime
-      Value: "1601-01-01T00:00:00.0000000"
     - Name: UTCTime
       Type: BaseDataVariableType
       DataType: DateTime
-      Value: "1601-01-01T00:00:00.0000000"
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "2fe49d6992a3f6496587062cd02090e6"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
 - Name: DB_DateTime2PLC
   Type: ObjectLibraryItem
   Children:
@@ -62,35 +91,35 @@ Children:
     - Name: Time
       Type: BaseDataVariableType
       DataType: DateTime
-      Value: "1601-01-01T00:00:00.0000000"
     - Name: UTCTime
       Type: BaseDataVariableType
       DataType: DateTime
-      Value: "1601-01-01T00:00:00.0000000"
     - Name: Ano
       Type: BaseDataVariableType
       DataType: Int32
-      Value: 0
     - Name: Mes
       Type: BaseDataVariableType
       DataType: Int32
-      Value: 0
     - Name: Dia
       Type: BaseDataVariableType
       DataType: Int32
-      Value: 0
     - Name: Hora
       Type: BaseDataVariableType
       DataType: Int32
-      Value: 0
     - Name: Minuto
       Type: BaseDataVariableType
       DataType: Int32
-      Value: 0
     - Name: Segundo
       Type: BaseDataVariableType
       DataType: Int32
-      Value: 0
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "56213c6dc6abee7669c9f9314723f37a"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
 - Name: VariableGenerator_SalvaPantalla_V2
   Type: ObjectLibraryItem
   Description: {"LocaleId":"","Text":"Genera valores X Y para modificar la posición de un objeto aleatoriamente.\nUsa Variables propias del C# para no usar variables del Model\n\n\nEjemplo: Imagen del Salvapantallas."}
@@ -118,7 +147,6 @@ Children:
     - Name: I_TamanoY
       Type: BaseDataVariableType
       DataType: Int32
-      Value: 0
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -133,15 +161,12 @@ Children:
     - Name: O_PosX
       Type: BaseDataVariableType
       DataType: Int32
-      Value: 0
     - Name: O_PosY
       Type: BaseDataVariableType
       DataType: Int32
-      Value: 0
     - Name: I_TamanoImagenX
       Type: BaseDataVariableType
       DataType: Int32
-      Value: 0
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -156,7 +181,6 @@ Children:
     - Name: I_TamanoImagenY
       Type: BaseDataVariableType
       DataType: Int32
-      Value: 0
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -168,6 +192,14 @@ Children:
           DataType: DynamicLinkMode
           ModellingRule: Optional
           Value: 2
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "5f83040957a547a6020a024c32e7c775"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
 - Name: Salvapantalla
   Type: ObjectLibraryItem
   Children:
@@ -255,7 +287,6 @@ Children:
                 Type: BaseDataVariableType
                 DataType: VariablePointer
                 Description: {"NamespaceIndex":2,"TextId":"SetVariableToModifyDescription"}
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
                 Children:
                 - Name: DynamicLink
                   Type: DynamicLink
@@ -265,52 +296,41 @@ Children:
                 Type: BaseDataVariableType
                 DataType: Boolean
                 Description: {"NamespaceIndex":2,"TextId":"SetValueDescription"}
-                Value: false
               - Name: ArrayIndex
                 Type: BaseDataVariableType
                 DataType: UInt32
                 Description: {"NamespaceIndex":2,"TextId":"SetArrayIndexDescription"}
                 ValueRank: ScalarOrOneDimension
-                Value: 0
         - Name: EventArguments
           Type: MouseDownEvent
           Children:
           - Name: EventId
             Type: PropertyType
             DataType: ByteString
-            Value: ""
           - Name: EventType
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceNode
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: SourceName
             Type: PropertyType
             DataType: String
-            Value: ""
           - Name: Time
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: ReceiveTime
             Type: PropertyType
             DataType: UtcTime
-            Value: "1601-01-01T00:00:00.0000000"
           - Name: Message
             Type: PropertyType
             DataType: LocalizedText
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Severity
             Type: PropertyType
             DataType: UInt16
-            Value: 0
     - Name: Visible
       Type: BaseDataVariableType
       DataType: Boolean
-      Value: false
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -341,7 +361,6 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
         Children:
         - Name: DynamicLink
           Type: DynamicLink
@@ -351,7 +370,6 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 0.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
@@ -373,7 +391,6 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
         Children:
         - Name: DynamicLink
           Type: DynamicLink
@@ -383,7 +400,6 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 0.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
@@ -426,7 +442,6 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 0.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
@@ -502,7 +517,6 @@ Children:
       - Name: I_TamanoY
         Type: BaseDataVariableType
         DataType: Int32
-        Value: 0
         Children:
         - Name: DynamicLink
           Type: DynamicLink
@@ -517,15 +531,12 @@ Children:
       - Name: O_PosX
         Type: BaseDataVariableType
         DataType: Int32
-        Value: 0
       - Name: O_PosY
         Type: BaseDataVariableType
         DataType: Int32
-        Value: 0
       - Name: I_TamanoImagenX
         Type: BaseDataVariableType
         DataType: Int32
-        Value: 0
         Children:
         - Name: DynamicLink
           Type: DynamicLink
@@ -540,7 +551,6 @@ Children:
       - Name: I_TamanoImagenY
         Type: BaseDataVariableType
         DataType: Int32
-        Value: 0
         Children:
         - Name: DynamicLink
           Type: DynamicLink
@@ -552,3 +562,101 @@ Children:
             DataType: DynamicLinkMode
             ModellingRule: Optional
             Value: 2
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "51455041da542face4900682e8fb2938"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+- Name: DB_DataLoggerFDK
+  Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"20240702\nCódigo que ha de \"colgar\" de un DATALOGGER.\nDe forma automatica, lee el ULTIMO dato de la base de datos y pone su valor sobre variables \"FDK_*\" que tiene creadas en el interface del Optix.\nSi se quiere añadir un dato al datalog, tambien hay que añadir una nueva variable  en el interface del Optix con el MISMO NOMBRE precedido de \"FDK_\"\nDaniel"}
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "bee77fc22f4f6eaf295494ba4baeb413"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: DB_DataLoggerFDK
+    Id: g=bb07bc11f94147b690e8d7f899355022
+    Supertype: NetLogic
+    ReferenceType: HasComponent
+    Children:
+    - Class: Method
+      Name: RestoreLastValues
+    - Name: FDK_Cancelacion
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:Com2Optix/Dat_fdk/Cancelacion"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: FDK_Lote
+      Type: BaseDataVariableType
+      DataType: Int32
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:Com2Optix/Dat_fdk/Lote"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: FDK_N_Bolsa
+      Type: BaseDataVariableType
+      DataType: Int64
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:Com2Optix/Dat_fdk/N_Bolsa"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: FDK_N_Caja
+      Type: BaseDataVariableType
+      DataType: Int32
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:Com2Optix/Dat_fdk/N_Caja"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: FDK_Comentario
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:Com2Optix/Dat_fdk/Comentario"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
