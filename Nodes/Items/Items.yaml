@@ -1011,3 +1011,21 @@ Children:
     - Name: Segundo
       Type: BaseDataVariableType
       DataType: Int32
+- Name: SalvaPantalla_AuxTags
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "22428e974f36ddb61f62f116314fbfe3"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: SalvaPantalla_AuxTags
+    Type: FolderType
+    Children:
+    - Name: RandomEn
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
