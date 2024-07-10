@@ -1031,7 +1031,7 @@ Children:
       Value: true
 - Name: Salvapantalla_V3
   Type: ObjectLibraryItem
-  Description: {"LocaleId":"","Text":"20240710 Simplificacion de Links para que el pegar el contenedor sea más rápido."}
+  Description: {"LocaleId":"","Text":"20240710 \nAñadir este PANEL al MainWindow, tambien hay que  \"idleTimeouatLogic\" para darle visibilidad al Panel añadido con el tiempo que se desee.\n\nSimplificacion de Links para que el pegar el contenedor sea más rápido.\n"}
   Children:
   - Name: LibraryItemGuid
     Type: BaseDataVariableType
