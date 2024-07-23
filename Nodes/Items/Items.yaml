@@ -1941,9 +1941,9 @@ Children:
       DataType: VerticalAlignment
       ModellingRule: Optional
       Value: 3
-- Name: DB_Salvapantalla_V6
+- Name: DB_Salvapantalla_V6_
   Type: ObjectLibraryItem
-  Description: {"LocaleId":"","Text":"20240723\nAñadir este PANEL al MainWindow, tambien hay que añadir \"idleTimeouatLogic\" para darle visibilidad al Panel añadido con el tiempo que se desee.\n\n"}
+  Description: {"LocaleId":"","Text":"20240723\nAñadir este PANEL al MainWindow, tambien hay que añadir \"idlenTimeout\" para darle visibilidad al Panel añadido con el tiempo que se desee.\n\n"}
   Children:
   - Name: LibraryItemGuid
     Type: BaseDataVariableType
@@ -1953,7 +1953,7 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt32
     Value: 1
-  - Name: DB_Salvapantalla_V6
+  - Name: DB_Salvapantalla_V6_
     Id: g=8b2227daf02fd03d83921cf16f145c2c
     Supertype: Panel
     ReferenceType: HasComponent
