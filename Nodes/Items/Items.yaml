@@ -704,8 +704,9 @@ Children:
             Value: "{Window}/DB_Salvapantalla_V6_/Visible@NodeId"
         - Name: Value
           Type: BaseDataVariableType
-          DataType: BaseDataType
+          DataType: Boolean
           Description: {"NamespaceIndex":2,"TextId":"SetValueDescription"}
+          Value: true
         - Name: ArrayIndex
           Type: BaseDataVariableType
           DataType: UInt32
