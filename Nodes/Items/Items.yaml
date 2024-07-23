@@ -646,7 +646,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "../../../../../../../Salvapantalla_V3/Visible@NodeId"
+                  Value: "../../../../../../Visible@NodeId"
               - Name: Value
                 Type: BaseDataVariableType
                 DataType: Boolean
@@ -1263,6 +1263,7 @@ Children:
       - Name: I_TamanoY
         Type: BaseDataVariableType
         DataType: Int32
+        Value: 1000
         Children:
         - Name: DynamicLink
           Type: DynamicLink
@@ -1287,7 +1288,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../Salvapantalla_V3/Imagen/Width"
+          Value: "../../Imagen/Width"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -1301,7 +1302,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../Salvapantalla_V3/Imagen/Height"
+          Value: "../../Imagen/Height"
           Children:
           - Name: Mode
             Type: BaseVariableType
