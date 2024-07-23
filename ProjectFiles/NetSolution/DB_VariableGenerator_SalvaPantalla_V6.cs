@@ -20,30 +20,38 @@ public class DB_VariableGenerator_SalvaPantalla_V6 : BaseNetLogic
     {
 
         // Insert code to be executed when the user-defined logic is started
-        taskPeriodico = new PeriodicTask(randomNum, 1500, LogicObject);
+        taskPeriodico = new PeriodicTask(randomPosition, 1500, LogicObject);
         taskPeriodico.Start();
     }
 
-    public void randomNum()
+    public void randomPosition()
     {
-        //var Xmax = 400;
+        var Xmax = 0;
+        if (LogicObject.GetVariable("I_TamanoX").Value > LogicObject.GetVariable("I_TamanoImagenX").Value)
+        {
+            Xmax = LogicObject.GetVariable("I_TamanoX").Value - LogicObject.GetVariable("I_TamanoImagenX").Value;
+        }
+        else
+        {
+            Xmax = 0;    // Para que salga en la parte izquierda
+        }
+
+        var Ymax = 0;
         //var Xmax = Project.Current.GetVariable("UI/MainWindow/Salvapantalla/OriginalWidth").Value - Project.Current.GetVariable("UI/MainWindow/Salvapantalla/Imagen/Width").Value;
-        var Xmax = LogicObject.GetVariable("I_TamanoX").Value - LogicObject.GetVariable("I_TamanoImagenX").Value;
-
-        //var Ymax = 400;
-        //var Ymax = Project.Current.GetVariable("UI/MainWindow/Salvapantalla/OriginalHeight").Value - Project.Current.GetVariable("UI/MainWindow/Salvapantalla/Imagen/Height").Value;
-        var Ymax = LogicObject.GetVariable("I_TamanoY").Value - LogicObject.GetVariable("I_TamanoImagenY").Value;
-
+        if (LogicObject.GetVariable("I_TamanoY").Value > LogicObject.GetVariable("I_TamanoImagenY").Value)
+        {
+            Ymax = LogicObject.GetVariable("I_TamanoY").Value - LogicObject.GetVariable("I_TamanoImagenY").Value;
+        }
+        else
+        {
+            Ymax = 0;    // Para que salga en la parte superior
+        }
 
         Random r = new Random();
 
-            //Project.Current.GetVariable("Model/SalvaPantalla_AuxTags/Pos_x").Value = r.Next(0, Xmax);
-            //Project.Current.GetVariable("Model/SalvaPantalla_AuxTags/Pos_y").Value = r.Next(0, Ymax);
-
-            LogicObject.GetVariable("O_PosX").Value = r.Next(0, Xmax);
-            LogicObject.GetVariable("O_PosY").Value = r.Next(0, Ymax);
-
-     
+        LogicObject.GetVariable("O_PosX").Value = r.Next(0, Xmax);
+        LogicObject.GetVariable("O_PosY").Value = r.Next(0, Ymax);
+            
     }
 
     public override void Stop()

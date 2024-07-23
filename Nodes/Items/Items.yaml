@@ -545,27 +545,90 @@ Children:
     - Name: Segundo
       Type: BaseDataVariableType
       DataType: Int32
-- Name: DB_Salvapantalla_V6_
+- Name: DB_Salvapantallas_Temporizador_v6_
   Type: ObjectLibraryItem
-  Description: {"LocaleId":"","Text":"20240723\nAñadir este PANEL al MainWindow:\n.-Hay que eliminar el ultimo numero añadido automaticamente al pegarse en la aplicacion\n.-Hay que añadir \"idlenTimeout\" para darle visibilidad al Panel añadido con el tiempo que se desee.\n\n"}
   Children:
   - Name: LibraryItemGuid
     Type: BaseDataVariableType
     DataType: Guid
-    Value: "a3fef5a530834eec692c6ca2f06226e0"
+    Value: "25fc33ae175d498a05a11983e6e8f4ab"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: DB_Salvapantallas_Temporizador_v6_
+    Id: g=fbfeb6e16a7f2ce0ff9c26e33da71fa4
+    Supertype: NetLogic
+    ReferenceType: HasComponent
+    Children:
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: Duration
+      Type: BaseDataVariableType
+      DataType: Duration
+      Value: "0:00:00:5.0000000"
+    - Name: OnTimeout
+      Type: MethodInvocation
+      Children:
+      - Class: Reference
+        Target: ns=2;i=98
+        Direction: Forward
+      - Name: ObjectPointer
+        Type: NodePointer
+        DataType: NodeId
+        Value: "/Objects/Commands/VariableCommands"
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType"
+      - Name: Method
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Set"
+      - Name: InputArguments
+        Type: BaseObjectType
+        Children:
+        - Name: VariableToModify
+          Type: BaseDataVariableType
+          DataType: VariablePointer
+          Description: {"NamespaceIndex":2,"TextId":"SetVariableToModifyDescription"}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../DB_Salvapantalla_V6_/Visible@NodeId"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Description: {"NamespaceIndex":2,"TextId":"SetValueDescription"}
+          Value: true
+        - Name: ArrayIndex
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Description: {"NamespaceIndex":2,"TextId":"SetArrayIndexDescription"}
+          ValueRank: ScalarOrOneDimension
+- Name: DB_Salvapantalla_V6_
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "52267a9f1422f9f5213d1ac84553f11d"
   - Name: LibraryItemVersion
     Type: BaseDataVariableType
     DataType: UInt32
     Value: 1
   - Name: DB_Salvapantalla_V6_
-    Id: g=8b2227daf02fd03d83921cf16f145c2c
+    Id: g=0de7f9a4d3c14a078805807f74e7b1d0
     Supertype: Panel
     ReferenceType: HasComponent
     Children:
     - Name: Width
       Type: BaseVariableType
       DataType: Size
-      ModellingRule: Optional
       Value: 300.0
     - Name: Height
       Type: BaseVariableType
@@ -1218,11 +1281,11 @@ Children:
       - Name: Width
         Type: BaseVariableType
         DataType: Size
-        Value: 170.0
+        Value: 250.0
       - Name: Height
         Type: BaseVariableType
         DataType: Size
-        Value: 90.0
+        Value: 110.0
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -1248,7 +1311,7 @@ Children:
       - Name: I_TamanoX
         Type: BaseDataVariableType
         DataType: Int32
-        Value: 500
+        Value: 555
         Children:
         - Name: DynamicLink
           Type: DynamicLink
@@ -1288,7 +1351,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../Imagen/Width"
+          Value: "../../Imagen/Width@Value"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -1302,7 +1365,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../Imagen/Height"
+          Value: "../../Imagen/Height@Value"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -1322,3 +1385,109 @@ Children:
       DataType: VerticalAlignment
       ModellingRule: Optional
       Value: 3
+- Name: DB_Salvapantalla_Boton_v6_
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "87d96a7e080500905a13e2f10f6878b0"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: DB_Salvapantalla_Boton_v6_
+    Id: g=7438fddb2a73f604b16311e98918843d
+    Supertype: Button
+    ReferenceType: HasComponent
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Button1"}
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 100.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 60.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=2;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=2;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Set"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":2,"TextId":"SetVariableToModifyDescription"}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../DB_Salvapantalla_V6_/Visible@NodeId"
+            - Name: Value
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Description: {"NamespaceIndex":2,"TextId":"SetValueDescription"}
+              Value: true
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":2,"TextId":"SetArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
