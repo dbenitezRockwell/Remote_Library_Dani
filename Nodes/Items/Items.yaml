@@ -1418,7 +1418,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../Width"
+          Value: "{Window}/Width"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -1433,7 +1433,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../Height"
+          Value: "{Window}/Height"
           Children:
           - Name: Mode
             Type: BaseVariableType
