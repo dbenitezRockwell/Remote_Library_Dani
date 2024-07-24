@@ -855,7 +855,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 720.0
+          Value: 416.0
         - Name: Height
           Type: BaseVariableType
           DataType: Size
@@ -876,12 +876,12 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 636.0
+            Value: 353.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 30.0
+            Value: 29.0
           - Name: HorizontalAlignment
             Type: BaseVariableType
             DataType: HorizontalAlignment
@@ -899,7 +899,7 @@ Children:
             Type: BaseDataVariableType
             DataType: String
             ModellingRule: Optional
-            Value: "Gordete"
+            Value: "Default"
           - Name: VerticalAlignment
             Type: BaseVariableType
             DataType: VerticalAlignment
@@ -929,7 +929,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 636.0
+            Value: 353.0
           - Name: HorizontalAlignment
             Type: BaseVariableType
             DataType: HorizontalAlignment
@@ -942,7 +942,7 @@ Children:
             Type: BaseDataVariableType
             DataType: String
             ModellingRule: Optional
-            Value: "Gordete"
+            Value: "Default"
           - Name: VerticalAlignment
             Type: BaseVariableType
             DataType: VerticalAlignment
@@ -951,7 +951,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 56.0
+            Value: 55.0
           - Name: TextHorizontalAlignment
             Type: BaseVariableType
             DataType: TextHorizontalAlignment
@@ -982,7 +982,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 156.0
+            Value: 84.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
@@ -1005,7 +1005,7 @@ Children:
             Type: BaseDataVariableType
             DataType: String
             ModellingRule: Optional
-            Value: "Gordete"
+            Value: "Default"
           - Name: VerticalAlignment
             Type: BaseVariableType
             DataType: VerticalAlignment
@@ -1035,7 +1035,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 156.0
+            Value: 84.0
           - Name: HorizontalAlignment
             Type: BaseVariableType
             DataType: HorizontalAlignment
@@ -1053,7 +1053,7 @@ Children:
             Type: BaseDataVariableType
             DataType: String
             ModellingRule: Optional
-            Value: "Gordete"
+            Value: "Default"
           - Name: VerticalAlignment
             Type: BaseVariableType
             DataType: VerticalAlignment
@@ -1088,12 +1088,12 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 420.0
+            Value: 198.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 30.0
+            Value: 31.0
           - Name: HorizontalAlignment
             Type: BaseVariableType
             DataType: HorizontalAlignment
@@ -1111,7 +1111,7 @@ Children:
             Type: BaseDataVariableType
             DataType: String
             ModellingRule: Optional
-            Value: "Gordete"
+            Value: "Default"
           - Name: VerticalAlignment
             Type: BaseVariableType
             DataType: VerticalAlignment
@@ -1146,7 +1146,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 420.0
+            Value: 198.0
           - Name: HorizontalAlignment
             Type: BaseVariableType
             DataType: HorizontalAlignment
@@ -1164,7 +1164,7 @@ Children:
             Type: BaseDataVariableType
             DataType: String
             ModellingRule: Optional
-            Value: "Gordete"
+            Value: "Default"
           - Name: VerticalAlignment
             Type: BaseVariableType
             DataType: VerticalAlignment
@@ -1173,7 +1173,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 56.0
+            Value: 57.0
           - Name: TextHorizontalAlignment
             Type: BaseVariableType
             DataType: TextHorizontalAlignment
@@ -1205,7 +1205,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 100.0
+            Value: 48.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
@@ -1219,7 +1219,7 @@ Children:
             Type: BaseDataVariableType
             DataType: String
             ModellingRule: Optional
-            Value: "Gordete"
+            Value: "Default"
           - Name: VerticalAlignment
             Type: BaseVariableType
             DataType: VerticalAlignment
@@ -1236,12 +1236,12 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 440.0
+            Value: 240.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 6.0
+            Value: 7.0
           - Name: HorizontalAlignment
             Type: BaseVariableType
             DataType: HorizontalAlignment
@@ -1250,7 +1250,7 @@ Children:
             Type: BaseDataVariableType
             DataType: String
             ModellingRule: Optional
-            Value: "Gordete"
+            Value: "Default"
           - Name: VerticalAlignment
             Type: BaseVariableType
             DataType: VerticalAlignment
@@ -1267,12 +1267,12 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 549.0
+            Value: 298.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 6.0
+            Value: 5.0
           - Name: HorizontalAlignment
             Type: BaseVariableType
             DataType: HorizontalAlignment
@@ -1281,7 +1281,7 @@ Children:
             Type: BaseDataVariableType
             DataType: String
             ModellingRule: Optional
-            Value: "Gordete"
+            Value: "Default"
           - Name: VerticalAlignment
             Type: BaseVariableType
             DataType: VerticalAlignment
@@ -1312,7 +1312,7 @@ Children:
             Type: BaseDataVariableType
             DataType: String
             ModellingRule: Optional
-            Value: "Gordete"
+            Value: "Default"
           - Name: VerticalAlignment
             Type: BaseVariableType
             DataType: VerticalAlignment
@@ -1337,7 +1337,7 @@ Children:
             Type: BaseDataVariableType
             DataType: String
             ModellingRule: Optional
-            Value: "Gordete"
+            Value: "Default"
           - Name: VerticalAlignment
             Type: BaseVariableType
             DataType: VerticalAlignment
@@ -1388,12 +1388,12 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 306.0
+            Value: 152.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 30.0
+            Value: 29.0
           - Name: HorizontalAlignment
             Type: BaseVariableType
             DataType: HorizontalAlignment
@@ -1411,7 +1411,7 @@ Children:
             Type: BaseDataVariableType
             DataType: String
             ModellingRule: Optional
-            Value: "Gordete"
+            Value: "Default"
           - Name: VerticalAlignment
             Type: BaseVariableType
             DataType: VerticalAlignment
@@ -1441,7 +1441,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 306.0
+            Value: 152.0
           - Name: HorizontalAlignment
             Type: BaseVariableType
             DataType: HorizontalAlignment
@@ -1459,7 +1459,7 @@ Children:
             Type: BaseDataVariableType
             DataType: String
             ModellingRule: Optional
-            Value: "Gordete"
+            Value: "Default"
           - Name: VerticalAlignment
             Type: BaseVariableType
             DataType: VerticalAlignment
@@ -1468,7 +1468,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 56.0
+            Value: 55.0
           - Name: TextHorizontalAlignment
             Type: BaseVariableType
             DataType: TextHorizontalAlignment
@@ -1491,12 +1491,12 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 280.0
+            Value: 138.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 6.0
+            Value: 5.0
           - Name: HorizontalAlignment
             Type: BaseVariableType
             DataType: HorizontalAlignment
@@ -1505,7 +1505,7 @@ Children:
             Type: BaseDataVariableType
             DataType: String
             ModellingRule: Optional
-            Value: "Gordete"
+            Value: "Default"
           - Name: VerticalAlignment
             Type: BaseVariableType
             DataType: VerticalAlignment
