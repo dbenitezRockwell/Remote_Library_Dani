@@ -547,6 +547,7 @@ Children:
       DataType: Int32
 - Name: DB_Salvapantallas_Boton_V6_
   Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"HELP\nObjeto que ha de colgar del \"MainWindow\" y estar posicionado en ultimo lugar para que al hacerse visible tape todo lo demás!\n\nUSO\n.- Al arrastrarlo al projecto se le añade un \"1\" al final que hay que eliminar para que los links del codigo del Temporizador encuentre el objeto.\n.- Hay que arrastrar el \"temporizador\" en paralelo con este objeto.\n.- Hay un boton prefabricado para hacer pruebas."}
   Children:
   - Name: LibraryItemGuid
     Type: BaseDataVariableType
