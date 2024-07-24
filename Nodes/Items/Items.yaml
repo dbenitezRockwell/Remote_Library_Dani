@@ -855,7 +855,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 520.0
+          Value: 720.0
         - Name: Height
           Type: BaseVariableType
           DataType: Size
@@ -871,12 +871,12 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../../../DB_VariableGenerator_SalvaPantalla_V6/O_PosX"
+              Value: "{Window}/DB_Salvapantalla_V6_/DB_VariableGenerator_SalvaPantalla_V6/O_PosX"
           - Name: LeftMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 456.0
+            Value: 636.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
@@ -924,12 +924,12 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../../../DB_VariableGenerator_SalvaPantalla_V6/O_PosY"
+              Value: "{Window}/DB_Salvapantalla_V6_/DB_VariableGenerator_SalvaPantalla_V6/O_PosY"
           - Name: LeftMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 456.0
+            Value: 636.0
           - Name: HorizontalAlignment
             Type: BaseVariableType
             DataType: HorizontalAlignment
@@ -977,7 +977,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../../../DB_VariableGenerator_SalvaPantalla_V6/I_TamanoX"
+              Value: "{Window}/Width"
           - Name: LeftMargin
             Type: BaseVariableType
             DataType: Size
@@ -1030,7 +1030,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../../../DB_VariableGenerator_SalvaPantalla_V6/I_TamanoY"
+              Value: "{Window}/Height"
           - Name: LeftMargin
             Type: BaseVariableType
             DataType: Size
@@ -1083,12 +1083,12 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../../../DB_VariableGenerator_SalvaPantalla_V6/I_TamanoImagenX"
+              Value: "{Window}/DB_Salvapantalla_V6_/Imagen/Width"
           - Name: LeftMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 240.0
+            Value: 420.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
@@ -1141,12 +1141,12 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../../../DB_VariableGenerator_SalvaPantalla_V6/I_TamanoImagenY"
+              Value: "{Window}/DB_Salvapantalla_V6_/Imagen/Height"
           - Name: LeftMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 240.0
+            Value: 420.0
           - Name: HorizontalAlignment
             Type: BaseVariableType
             DataType: HorizontalAlignment
@@ -1236,7 +1236,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 260.0
+            Value: 440.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
@@ -1267,7 +1267,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 369.0
+            Value: 549.0
           - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
@@ -1373,6 +1373,143 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
+        - Name: Label_MainWindow_Width1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Window}/DB_Salvapantalla_V6_/DB_VariableGenerator_SalvaPantalla_V6/I_TamanoX"
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 306.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 30.0
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+          - Name: TextColor
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#fbf2f2"
+          - Name: RightMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+          - Name: Style
+            Type: BaseDataVariableType
+            DataType: String
+            ModellingRule: Optional
+            Value: "Gordete"
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+          - Name: TextHorizontalAlignment
+            Type: BaseVariableType
+            DataType: TextHorizontalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: TextVerticalAlignment
+            Type: BaseVariableType
+            DataType: TextVerticalAlignment
+            ModellingRule: Optional
+            Value: 1
+        - Name: Label_MainWindow_Height1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Window}/DB_Salvapantalla_V6_/DB_VariableGenerator_SalvaPantalla_V6/I_TamanoY"
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 306.0
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+          - Name: TextColor
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#fbf2f2"
+          - Name: RightMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+          - Name: Style
+            Type: BaseDataVariableType
+            DataType: String
+            ModellingRule: Optional
+            Value: "Gordete"
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 56.0
+          - Name: TextHorizontalAlignment
+            Type: BaseVariableType
+            DataType: TextHorizontalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: TextVerticalAlignment
+            Type: BaseVariableType
+            DataType: TextVerticalAlignment
+            ModellingRule: Optional
+            Value: 1
+        - Name: Label_titulo4
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"I_Tamano"}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 280.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 6.0
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+          - Name: Style
+            Type: BaseDataVariableType
+            DataType: String
+            ModellingRule: Optional
+            Value: "Gordete"
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
     - Name: Imagen
       Type: Image
       Children:
@@ -1413,12 +1550,12 @@ Children:
       - Name: I_TamanoX
         Type: BaseDataVariableType
         DataType: Int32
-        Value: 563
+        Value: 555
         Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Window}/Width"
+          Value: "../../../Width"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -1433,7 +1570,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Window}/Height"
+          Value: "../../../Height"
           Children:
           - Name: Mode
             Type: BaseVariableType

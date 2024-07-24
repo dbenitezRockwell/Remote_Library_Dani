@@ -42,10 +42,10 @@ Project:
    Module: FTOptix.HMIProject.Net
    Version: 4.4
  Statistics:
-  TotalNodeCount: 387
-  Objects: 69
+  TotalNodeCount: 418
+  Objects: 72
   ObjectTypes: 13
-  Variables: 304
+  Variables: 332
   VariableTypes: 0
   DataTypes: 0
   Methods: 1
