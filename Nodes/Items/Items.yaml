@@ -1625,3 +1625,56 @@ Children:
       DataType: VerticalAlignment
       ModellingRule: Optional
       Value: 3
+- Name: DB_ChangePageFromTag
+  Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"20240725 Permite cargar en un \"panelLoader\" el Display/panel que se elija desde una TAG del controlador.\n\n"}
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "94bda37ff309ba912cd05393d62b417c"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: DB_ChangePageFromTag
+    Id: g=14094e1c3bd46fdca5bbd75ccfcd4323
+    Supertype: NetLogic
+    Description: {"LocaleId":"en-US","Text":"Muestra en el \"PanelLoader\" el display/Panel que tiene como \"ScreenId\" el valor del \"PageChangeTag\""}
+    ReferenceType: HasComponent
+    Children:
+    - Name: PanelLoader
+      Type: NodePointer
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container/PanelLoader"
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{MainPanelLoader}@NodeId"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: PageChangeTag
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"11e0c59b78b88629fa888b45f4ecdae5","Namespace":4}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"11e0c59b78b88629fa888b45f4ecdae5","Namespace":4}
+    - Name: ScreensFolder
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"f19534d94ec2a47ccc8ea9386a48ac83","Namespace":4}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
