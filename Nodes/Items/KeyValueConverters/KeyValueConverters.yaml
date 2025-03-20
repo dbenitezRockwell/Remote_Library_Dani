@@ -1,0 +1,50 @@
+Name: KeyValueConverters
+Type: FolderType
+Children:
+- Name: Key_Value_Negro_Rojo
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "8568827343b7e1df3269dac5d3077b81"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: Key_Value_Negro_Rojo
+    Id: g=196e643d2df67e812e56a45ab01b6839
+    Supertype: ValueMapConverter
+    ReferenceType: HasComponent
+    Children:
+    - Name: ns=2;Pairs
+      Type: BaseObjectType
+      ModellingRule: None
+      Children:
+      - Name: Pair
+        Type: ValueMapPair
+        ModellingRule: None
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: None
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: None
+          Value: "#000000"
+      - Name: Pair1
+        Type: ValueMapPair
+        ModellingRule: None
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: None
+          Value: true
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: None
+          Value: "#eb1a1a"
