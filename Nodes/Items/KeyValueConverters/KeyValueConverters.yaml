@@ -3,6 +3,7 @@ Type: FolderType
 Children:
 - Name: Key_Value_Negro_Rojo
   Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"Añadir dentro de la carpeta \"Converters\" para que este disponible en toda la aplicacón"}
   Children:
   - Name: LibraryItemGuid
     Type: BaseDataVariableType
