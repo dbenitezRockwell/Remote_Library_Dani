@@ -10,7 +10,7 @@ using FTOptix.ODBCStore;
 using FTOptix.OPCUAServer;
 #endregion
 
-public class DB_DateTime2PLC : BaseNetLogic
+public class DB_ClockLogic_Reducido : BaseNetLogic
 {
 	public override void Start()
 	{
