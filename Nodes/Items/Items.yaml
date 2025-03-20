@@ -622,3 +622,4 @@ Children:
       Type: BaseDataVariableType
       DataType: Int32
 - File: Salvapantallas_Dinamico/Salvapantallas_Dinamico.yaml
+- File: Salvapantallas_Estatico/Salvapantallas_Estatico.yaml

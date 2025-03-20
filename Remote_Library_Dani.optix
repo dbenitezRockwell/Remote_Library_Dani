@@ -42,8 +42,8 @@ Project:
    Module: FTOptix.HMIProject.Net
    Version: 4.8
  Statistics:
-  TotalNodeCount: 449
-  Objects: 80
+  TotalNodeCount: 450
+  Objects: 81
   ObjectTypes: 16
   Variables: 351
   VariableTypes: 0
@@ -51,6 +51,6 @@ Project:
   Methods: 2
   References: 9
   ReferenceTypes: 0
-  Files: 6
+  Files: 7
  Nodes:
  - File: Nodes/Remote_Library_Dani.yaml
