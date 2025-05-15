@@ -682,16 +682,17 @@ Children:
   - Name: LibraryItemVersion
     Type: BaseDataVariableType
     DataType: UInt32
-    Value: 1
+    Value: 2
   - Name: Cop_Tag2Tag
     Id: g=87aa29ed643841ad96a30ca4a91fb256
     Supertype: NetLogic
-    Description: {"LocaleId":"en-US","Text":"Copia un tag sobre otra."}
+    Description: {"LocaleId":"en-US","Text":"Copia un tag sobre otra. Las TAGS se definen dentro del código ya que el NetLogix no deja \"entrar\" UDTs"}
     ReferenceType: HasComponent
     Children:
     - Name: I_UpdateTime
       Type: BaseDataVariableType
       DataType: Int32
+      Value: 100
     - Name: I_Enable
       Type: BaseDataVariableType
       DataType: Boolean
@@ -699,6 +700,5 @@ Children:
     - Name: I_Messages_ON
       Type: BaseDataVariableType
       DataType: Boolean
-      Value: true
     - Class: Method
       Name: TareaPrincipal

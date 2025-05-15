@@ -58,8 +58,8 @@ public class Cop_Tag2Tag : BaseNetLogic
 
                 //If using an alias (nicer approach than the entire path): 
                 //Hay que probar con parametros de entrada, pero no lo he conseguido.
-                var PLC_I = Project.Current.GetVariable("CommDrivers/EtherNet_IP/RAEtherNet_IPStation1/Tags/Program:PLC2Optix2DB/Dat2Log");
-                var PLC_O = Project.Current.GetVariable("CommDrivers/EtherNet_IP/RAEtherNet_IPStation1/Tags/Program:PLC2Optix2DB/Dat_fdk");
+                var PLC_I = Project.Current.GetVariable("CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program:PLC2Optix2DB/Dat2Log");
+                var PLC_O = Project.Current.GetVariable("CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program:PLC2Optix2DB/Dat_fdk");
 
                 PLC_I.RemoteRead(); // to keep the variables synched even if not in use by any current page
 
