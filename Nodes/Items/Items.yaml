@@ -623,3 +623,82 @@ Children:
       DataType: Int32
 - File: Salvapantallas_Dinamico/Salvapantallas_Dinamico.yaml
 - File: Salvapantallas_Estatico/Salvapantallas_Estatico.yaml
+- Name: Cop_INT2INT
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "2b82da7563ac11f82601f630159929b6"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: Cop_INT2INT
+    Id: g=d5a83d0558b2ba2d9ce02cbdf30984f9
+    Supertype: NetLogic
+    ReferenceType: HasComponent
+    Children:
+    - Name: UpdateTime
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Enable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Class: Method
+      Name: test
+- Name: Cop_DINT2DINT
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "2de153f54d024d6abbbb55f021125ce0"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: Cop_DINT2DINT
+    Id: g=ed07eaab9ad78d75c35719ad82dffe0e
+    Supertype: NetLogic
+    ReferenceType: HasComponent
+    Children:
+    - Name: UpdateTime
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Enable
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Class: Method
+      Name: test
+- Name: Cop_Tag2Tag
+  Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"Copia un Tag sobre otra con Enable, Control de tiempo y diagnosticos."}
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "f186da523043527c7920da9ea11df6d9"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: Cop_Tag2Tag
+    Id: g=87aa29ed643841ad96a30ca4a91fb256
+    Supertype: NetLogic
+    Description: {"LocaleId":"en-US","Text":"Copia un tag sobre otra."}
+    ReferenceType: HasComponent
+    Children:
+    - Name: I_UpdateTime
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: I_Enable
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: I_Messages_ON
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Class: Method
+      Name: TareaPrincipal

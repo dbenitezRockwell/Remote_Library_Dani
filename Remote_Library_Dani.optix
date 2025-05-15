@@ -6,17 +6,17 @@ Project:
  Company: ''
  Copyright: ''
  FormatVersion: 1
- ProductVersion: 1.5
- CoreVersion: 4.0
+ ProductVersion: 1.6
+ CoreVersion: 4.2
  Dependencies:
   2:
    Uri: 'urn:FTOptix:CoreBase'
    Module: FTOptix.CoreBase
-   Version: 4.0
+   Version: 5.0
   3:
    Uri: 'urn:FTOptix:HMIProject'
    Module: FTOptix.HMIProject
-   Version: 6.5
+   Version: 7.1
   5:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
@@ -24,31 +24,31 @@ Project:
   6:
    Uri: 'urn:FTOptix:Core:Net'
    Module: FTOptix.Core.Net
-   Version: 2.0
+   Version: 2.2
   7:
    Uri: 'urn:FTOptix:CoreBase:Net'
    Module: FTOptix.CoreBase.Net
-   Version: 1.1
+   Version: 2.0
   8:
    Uri: 'urn:FTOptix:UI'
    Module: FTOptix.UI
-   Version: 14.2
+   Version: 18.1
   9:
    Uri: 'urn:FTOptix:UI:Net'
    Module: FTOptix.UI.Net
-   Version: 14.2
+   Version: 18.1
   10:
    Uri: 'urn:FTOptix:HMIProject:Net'
    Module: FTOptix.HMIProject.Net
-   Version: 4.8
+   Version: 4.9
  Statistics:
-  TotalNodeCount: 510
-  Objects: 91
-  ObjectTypes: 19
-  Variables: 398
+  TotalNodeCount: 532
+  Objects: 94
+  ObjectTypes: 22
+  Variables: 411
   VariableTypes: 0
   DataTypes: 0
-  Methods: 2
+  Methods: 5
   References: 10
   ReferenceTypes: 0
   Files: 7
