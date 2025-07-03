@@ -1,0 +1,25 @@
+Name: NetLogic
+Type: FolderType
+Children:
+- Name: DB_DataLoggerSIZE_v20250307
+  Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"Calcula la cantidad de datos de un DataLog.\nSe ha de poner colgando del DataLog que se quiera usar.\n"}
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "ca6bcf32004bbfdf79caf3c7d01b8897"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: DB_DataLoggerSIZE_v20250307
+    Id: g=845c93a4d544a98995cfa0d2d2902937
+    Supertype: NetLogic
+    ReferenceType: HasComponent
+    Children:
+    - Class: Method
+      Name: CalculateSize
+    - Name: Size
+      Type: BaseDataVariableType
+      DataType: Int32

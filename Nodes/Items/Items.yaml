@@ -599,28 +599,6 @@ Children:
       - Name: Kind
         Type: PropertyType
         DataType: NodeId
-- Name: DB_DataLoggerSIZE
-  Type: ObjectLibraryItem
-  Description: {"LocaleId":"","Text":"20240808\nCódigo que ha de \"colgar\" de un DATALOGGER.\nDe forma automatica, lee el tamaño de las filas del DATALOGGER"}
-  Children:
-  - Name: LibraryItemGuid
-    Type: BaseDataVariableType
-    DataType: Guid
-    Value: "c5a539e6259ab208e7b8e8bd737ffe77"
-  - Name: LibraryItemVersion
-    Type: BaseDataVariableType
-    DataType: UInt32
-    Value: 1
-  - Name: DB_DataLoggerSIZE
-    Id: g=4228bc70038e7026d79844f0f2935e84
-    Supertype: NetLogic
-    ReferenceType: HasComponent
-    Children:
-    - Class: Method
-      Name: CalculateSize
-    - Name: Size
-      Type: BaseDataVariableType
-      DataType: Int32
 - File: Salvapantallas_Dinamico/Salvapantallas_Dinamico.yaml
 - File: Salvapantallas_Estatico/Salvapantallas_Estatico.yaml
 - Name: Cop_INT2INT
@@ -702,3 +680,4 @@ Children:
       DataType: Boolean
     - Class: Method
       Name: TareaPrincipal
+- File: NetLogic/NetLogic.yaml
