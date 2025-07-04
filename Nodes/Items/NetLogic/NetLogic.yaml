@@ -12,7 +12,7 @@ Children:
   - Name: LibraryItemVersion
     Type: BaseDataVariableType
     DataType: UInt32
-    Value: 1
+    Value: 2
   - Name: DB_DataLoggerSIZE_v20250307
     Id: g=845c93a4d544a98995cfa0d2d2902937
     Supertype: NetLogic

@@ -65,7 +65,10 @@ public class DB_DataLoggerSIZE_v20250307 : BaseNetLogic
         }
         catch (System.Exception ex)
         {
+            Log.Error("El COUNT de la tabla del DataLog ha tenido problems y he entrado en el catch");
             Log.Error(ex.Message);
+            Log.Error(ex.StackTrace);
+            Log.Error(ex.HelpLink);
         }
     }
 
