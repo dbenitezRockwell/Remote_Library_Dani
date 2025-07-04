@@ -49,3 +49,50 @@ Children:
           DataType: Color
           ModellingRule: None
           Value: "#eb1a1a"
+- Name: Key_Value_Gris_Verde
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "84f6136335dbb11146fdd43893bff940"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: Key_Value_Gris_Verde
+    Id: g=5308d5cb6c347dc36c0e2bc96e718adc
+    Supertype: ValueMapConverter
+    ReferenceType: HasComponent
+    Children:
+    - Name: ns=2;Pairs
+      Type: BaseObjectType
+      ModellingRule: None
+      Children:
+      - Name: Pair
+        Type: ValueMapPair
+        ModellingRule: None
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: None
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: None
+          Value: "#cfcfcf"
+      - Name: Pair1
+        Type: ValueMapPair
+        ModellingRule: None
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: None
+          Value: true
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: None
+          Value: "#1afe0d"

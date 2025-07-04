@@ -23,3 +23,73 @@ Children:
     - Name: Size
       Type: BaseDataVariableType
       DataType: Int32
+- Name: Cop_Tag2Tag_If_SF_OK
+  Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"Copia un tag en otro tag mirando si el Store&Fordware de la base de datos esta OK."}
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "ca1fbd1c207b51b22c9074ca735f891a"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: Cop_Tag2Tag_If_SF_OK
+    Id: g=1baf3103e7f8420063bc76f154f4cf1f
+    Supertype: NetLogic
+    Description: {"LocaleId":"en-US","Text":"Copia un tag sobre otra. Las TAGS se definen dentro del código ya que el NetLogix no deja \"entrar\" UDTs"}
+    ReferenceType: HasComponent
+    Children:
+    - Name: I_UpdateTime
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 100
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../DataStores/EmbeddedDatabase/Status"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: I_Enable
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: I_Messages_ON
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Class: Method
+      Name: TareaPrincipal
+    - Name: O_DB_Status
+      Type: BaseDataVariableType
+      DataType: Int32
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:PLC2Optix2DB/DB_Status"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: O_DB_SF_Ready
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:PLC2Optix2DB/DB_SF_Ready"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
