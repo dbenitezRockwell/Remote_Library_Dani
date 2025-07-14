@@ -93,3 +93,66 @@ Children:
           DataType: DynamicLinkMode
           ModellingRule: Optional
           Value: 2
+- Name: CustomSFLogic
+  Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"Código enviado por Fabio Rolandone. Para hacer el Store&Forware desde un DataLog interno a una base de datos SQL.\nHay que colocarlo dentro del Loggers que queramos salvaguardar."}
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "51c479cb6b103829220ab3ce25c7a369"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: CustomSFLogic
+    Id: g=77705c53cb841208c83b70c7b22e6789
+    Supertype: NetLogic
+    ReferenceType: HasComponent
+    Children:
+    - Name: TargetStore
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"bd83b47d762a8ed9fbad688289141a09","Namespace":4}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/Store"
+    - Name: TableName
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: LastTimestamp
+      Type: BaseDataVariableType
+      DataType: DateTime
+    - Name: DeleteQuery
+      Type: BaseDataVariableType
+      DataType: String
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"DELETE FROM {#tablename} WHERE Timestamp <= {#timestamp:sql_literal} "}
+        - Name: ns=2;Sourcetablename
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../TableName"
+        - Name: ns=2;Sourcetimestamp
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../LastTimestamp"

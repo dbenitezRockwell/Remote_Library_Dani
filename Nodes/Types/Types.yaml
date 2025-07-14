@@ -103,3 +103,108 @@ Children:
     Type: BaseDataVariableType
     DataType: Int32
     Value: 250
+- Name: PID
+  Id: g=f190d8ae45ae8c4f43a4f7095afbfa14
+  Supertype: BaseObjectType
+  Children:
+  - Name: Tag_AOI_PID_ATune
+    Type: Alias
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"37760b71fc5b09d7ce637c5dc3450995","Namespace":4}
+  - Name: Tag_PidData
+    Type: Alias
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"785b151df23cee10e4c7f569aa8b0254","Namespace":4}
+- Name: Conv_Bool_Gris_Negro
+  Id: g=f9f0f55b36d6e0c4e54fb5d94aab1775
+  Supertype: ValueMapConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Source
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ReferenceType: HasSource
+  - Name: ns=2;Pairs
+    Type: BaseObjectType
+    ModellingRule: None
+    Children:
+    - Name: Pair
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: None
+        Value: true
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: None
+        Value: "#000000"
+    - Name: Pair1
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: None
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: None
+        Value: "#b3b3b3"
+- Class: Reference
+  Type: HasComponent
+  Target: g=5dea7171834adbba219be23c3ec49e19
+- Class: Reference
+  Type: HasComponent
+  Target: g=e6d2747c22c9e84f35fe7701606a041c
+- Class: Reference
+  Type: HasComponent
+  Target: g=cc8a3a2ecf04d5c9df757b1bb3d21985
+- Class: Reference
+  Type: HasComponent
+  Target: g=cf823bf74fa555e6f2086feb32678a32
+- Class: Reference
+  Type: HasComponent
+  Target: g=704bd6332a32de88ced40e2e18da6365
+- Class: Reference
+  Type: HasComponent
+  Target: g=158b42de2b7a66f64dba2350bf962cc5
+- Class: Reference
+  Type: HasComponent
+  Target: g=1ebaa98af77eb52604dc88c6bcf2778a
+- Class: Reference
+  Type: HasComponent
+  Target: g=9da8650065433ef220bfb142c59adb0f
+- Class: Reference
+  Type: HasComponent
+  Target: g=61dbcb3cb03a91d512feeadfd31448a4
+- Class: Reference
+  Type: HasComponent
+  Target: g=52c0ddfab6738b34bdf965bc0ffe6ed9
+- Class: Reference
+  Type: HasComponent
+  Target: g=7b826da85744bd82c0d3b29938f98be6
+- Class: Reference
+  Type: HasComponent
+  Target: g=e192bd9b698e2259ed14f409706c1b79
+- Class: Reference
+  Type: HasComponent
+  Target: g=c4957eb12bba029e2ba085fe8bc1e79e
+- Class: Reference
+  Type: HasComponent
+  Target: g=f062744881efd585bb26b2c6a14d3817
+- Class: Reference
+  Type: HasComponent
+  Target: g=42e93fbd62377d6949ed549f29b7d3ef

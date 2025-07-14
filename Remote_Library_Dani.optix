@@ -41,16 +41,24 @@ Project:
    Uri: 'urn:FTOptix:HMIProject:Net'
    Module: FTOptix.HMIProject.Net
    Version: 4.9
+  11:
+   Uri: 'urn:FTOptix:Store'
+   Module: FTOptix.Store
+   Version: 1.0
+  12:
+   Uri: 'urn:FTOptix:Store:Net'
+   Module: FTOptix.Store.Net
+   Version: 1.0
  Statistics:
-  TotalNodeCount: 560
-  Objects: 100
-  ObjectTypes: 24
-  Variables: 430
+  TotalNodeCount: 2939
+  Objects: 580
+  ObjectTypes: 43
+  Variables: 2310
   VariableTypes: 0
   DataTypes: 0
   Methods: 6
-  References: 10
+  References: 31
   ReferenceTypes: 0
-  Files: 8
+  Files: 11
  Nodes:
  - File: Nodes/Remote_Library_Dani.yaml

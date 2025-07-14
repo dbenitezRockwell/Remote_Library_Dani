@@ -1,0 +1,1608 @@
+Name: PID_Autotune
+Type: FolderType
+Children:
+- Name: PID_Autotune
+  Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"Importar toda la carpeta.\nAñadir al Display que se quiera el \"Listado_PIDs_Nivel1\"\nHay que usar un Model con la \n"}
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "0cbc7a194be86c8e9b13612bff07f5e6"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: PID_Autotune
+    Type: FolderType
+    Children:
+    - Name: Panel_PID_Nivel1
+      Id: g=5dea7171834adbba219be23c3ec49e19
+      Supertype: Panel
+      ReferenceType: HasComponent
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 370.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 30.0
+      - Name: Fondo
+        Type: Rectangle
+        Children:
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#f0f0f0"
+        - Name: Checkbox_Cmd_On
+          Type: CheckBox
+          Children:
+          - Name: Checked
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/Cmd_On"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":""}
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 10.0
+          - Name: Style
+            Type: BaseDataVariableType
+            DataType: String
+            ModellingRule: Optional
+            Value: "CheckBox_PID_ON"
+          - Name: IndicatorPosition
+            Type: BaseDataVariableType
+            DataType: HorizontalPositionEnum
+            ModellingRule: Optional
+        - Name: SpinBox_SP
+          Type: SpinBox
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Double
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/In_SP"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 60.0
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: Enabled
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+            Value: true
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 40.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+          - Name: BottomMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Double
+            ModellingRule: Optional
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Double
+            ModellingRule: Optional
+            Value: 200.0
+          - Name: ShowButtons
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: String
+            ModellingRule: Optional
+            Value: "n2"
+          - Name: InputBoxStyle
+            Type: BaseDataVariableType
+            DataType: String
+            ModellingRule: Optional
+            Value: "InputBox_Dato"
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+          - Name: Editable
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+            Value: true
+        - Name: Label_PV
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: StringFormatter1
+              Type: StringFormatter
+              Children:
+              - Name: Format
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ReferenceType: HasParameter
+                ModellingRule: Optional
+                Value: {"LocaleId":"en-US","Text":"{0:n2}"}
+              - Name: ns=2;Source0
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/In_PV"
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 110.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+          - Name: BottomMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+          - Name: FontSize
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 15.0
+        - Name: Label_CV
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: StringFormatter1
+              Type: StringFormatter
+              Children:
+              - Name: Format
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ReferenceType: HasParameter
+                ModellingRule: Optional
+                Value: {"LocaleId":"en-US","Text":"{0:n2}"}
+              - Name: ns=2;Source0
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/Out_CV"
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 120.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+          - Name: BottomMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+          - Name: FontSize
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 15.0
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 1
+          - Name: RightMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 5.0
+        - Name: Checkbox_Controller_Active
+          Type: CheckBox
+          Children:
+          - Name: Checked
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/Sts_Controller_Active"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":""}
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 295.0
+          - Name: Style
+            Type: BaseDataVariableType
+            DataType: String
+            ModellingRule: Optional
+            Value: "CheckBox_PID_ON"
+          - Name: IndicatorPosition
+            Type: BaseDataVariableType
+            DataType: HorizontalPositionEnum
+            ModellingRule: Optional
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 4.0
+          - Name: BottomMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+          - Name: Enabled
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+        - Name: Button1
+          Type: Button
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"CFG"}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 206.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+          - Name: MouseClickEventHandler1
+            Type: EventHandler
+            Children:
+            - Name: ListenEventType
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+            - Name: MethodsToCall
+              Type: BaseObjectType
+              Children:
+              - Name: MethodContainer1
+                Type: BaseObjectType
+                Children:
+                - Name: ns=2;ObjectPointer
+                  Type: NodePointer
+                  DataType: NodeId
+                  Value: "/Objects/Commands/UICommands"
+                  Children:
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: ns=2;Method
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "OpenDialog"
+                - Name: InputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: Dialog
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    Description: {"NamespaceIndex":8,"TextId":"OpenDialogDialogDescription"}
+                    Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_PID"
+                  - Name: AliasNode
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    Description: {"NamespaceIndex":8,"TextId":"OpenDialogAliasNodeDescription"}
+                    ValueRank: ScalarOrOneDimension
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "{Alias_Panel_PID_Nivel1}@NodeId"
+                  - Name: ParentItem
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    Description: {"NamespaceIndex":8,"TextId":"OpenDialogParentItemDescription"}
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../..@NodeId"
+                - Name: OutputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: DialogNodeId
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    Description: {"NamespaceIndex":8,"TextId":"OpenDialogDialogNodeIdDescription"}
+            - Name: EventArguments
+              Type: MouseClickEvent
+              Children:
+              - Name: EventId
+                Type: PropertyType
+                DataType: ByteString
+              - Name: EventType
+                Type: PropertyType
+                DataType: NodeId
+              - Name: SourceNode
+                Type: PropertyType
+                DataType: NodeId
+              - Name: SourceName
+                Type: PropertyType
+                DataType: String
+              - Name: Time
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ReceiveTime
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: Message
+                Type: PropertyType
+                DataType: LocalizedText
+              - Name: Severity
+                Type: PropertyType
+                DataType: UInt16
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: BottomMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../CFG_Button_ON"
+        - Name: UrgentPriority_Error
+          Type: ScaleLayout
+          WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+          Children:
+          - Name: FillColor_Foreground
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#ffffff"
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 24.0
+          - Name: OriginalWidth
+            Type: BaseVariableType
+            DataType: Size
+            Value: 24.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 24.0
+          - Name: OriginalHeight
+            Type: BaseVariableType
+            DataType: Size
+            Value: 24.0
+          - Name: Foreground
+            Type: Image
+            Children:
+            - Name: Path
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              Value: "ns=4;%PROJECTDIR%/res/Alarms/Icons/Alarms_Icons_Urgent_Priority_Foreground.svg"
+            - Name: Width
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 24.0
+            - Name: Height
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 24.0
+            - Name: DynamicColor
+              Type: BaseDataVariableType
+              DataType: Color
+              Value: "#ffffff"
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../FillColor_Foreground"
+          - Name: FillColor_Indicator
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#e22028"
+          - Name: Indicator
+            Type: Image
+            Children:
+            - Name: Path
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              Value: "ns=4;%PROJECTDIR%/res/Alarms/Icons/Alarms_Icons_Urgent_Priority_Indicator.svg"
+            - Name: Width
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 24.0
+            - Name: Height
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 24.0
+            - Name: DynamicColor
+              Type: BaseDataVariableType
+              DataType: Color
+              Value: "#e22028"
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../FillColor_Indicator"
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 245.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/Sts_Fault"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+      - Name: Alias_Panel_PID_Nivel1
+        Type: Alias
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Objects/Remote_Library_Dani/Types/PID"
+      - Name: CFG_Button_ON
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+    - Name: Listado_PIDs_Nivel1
+      Id: g=e6d2747c22c9e84f35fe7701606a041c
+      Supertype: Panel
+      ReferenceType: HasComponent
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 370.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 150.0
+      - Name: VerticalLayout1
+        Type: ColumnLayout
+        Children:
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: Panel_PID_Nivel1_1
+          Type: Panel_PID_Nivel1
+          Children:
+          - Name: Fondo
+            Type: Rectangle
+            Children:
+            - Name: Checkbox_Cmd_On
+              Type: CheckBox
+              Children:
+              - Name: Checked
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/Cmd_On"
+            - Name: SpinBox_SP
+              Type: SpinBox
+              Children:
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: Double
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/In_SP"
+            - Name: Label_PV
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: StringFormatter1
+                  Type: StringFormatter
+                  Children:
+                  - Name: Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/In_PV"
+            - Name: Label_CV
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: StringFormatter1
+                  Type: StringFormatter
+                  Children:
+                  - Name: Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/Out_CV"
+            - Name: Checkbox_Controller_Active
+              Type: CheckBox
+              Children:
+              - Name: Checked
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/Sts_Controller_Active"
+            - Name: Button1
+              Type: Button
+              Children:
+              - Name: MouseClickEventHandler1
+                Type: EventHandler
+                Children:
+                - Name: ListenEventType
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+                - Name: MethodsToCall
+                  Type: BaseObjectType
+                  Children:
+                  - Name: MethodContainer1
+                    Type: BaseObjectType
+                    Children:
+                    - Name: ObjectPointer
+                      Type: NodePointer
+                      DataType: NodeId
+                      Value: "/Objects/Commands/UICommands"
+                      Children:
+                      - Name: Kind
+                        Type: PropertyType
+                        DataType: NodeId
+                        Value: "/Types/ObjectTypes/BaseObjectType"
+                    - Name: Method
+                      Type: BaseDataVariableType
+                      DataType: String
+                      Value: "OpenDialog"
+                    - Name: InputArguments
+                      Type: BaseObjectType
+                      Children:
+                      - Name: Dialog
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                        Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_PID"
+                      - Name: AliasNode
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                        ValueRank: ScalarOrOneDimension
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "{Alias_Panel_PID_Nivel1}@NodeId"
+                      - Name: ParentItem
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "../../../../..@NodeId"
+                    - Name: OutputArguments
+                      Type: BaseObjectType
+                      Children:
+                      - Name: DialogNodeId
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                - Name: EventArguments
+                  Type: MouseClickEvent
+                  Children:
+                  - Name: EventId
+                    Type: PropertyType
+                    DataType: ByteString
+                  - Name: EventType
+                    Type: PropertyType
+                    DataType: NodeId
+                  - Name: SourceNode
+                    Type: PropertyType
+                    DataType: NodeId
+                  - Name: SourceName
+                    Type: PropertyType
+                    DataType: String
+                  - Name: Time
+                    Type: PropertyType
+                    DataType: UtcTime
+                  - Name: ReceiveTime
+                    Type: PropertyType
+                    DataType: UtcTime
+                  - Name: Message
+                    Type: PropertyType
+                    DataType: LocalizedText
+                  - Name: Severity
+                    Type: PropertyType
+                    DataType: UInt16
+              - Name: Visible
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: true
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../CFG_Button_ON"
+            - Name: UrgentPriority_Error
+              Type: ScaleLayout
+              WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+              Children:
+              - Name: FillColor_Foreground
+                Type: BaseDataVariableType
+                DataType: Color
+                Value: "#ffffff"
+              - Name: OriginalWidth
+                Type: BaseVariableType
+                DataType: Size
+                Value: 24.0
+              - Name: OriginalHeight
+                Type: BaseVariableType
+                DataType: Size
+                Value: 24.0
+              - Name: Foreground
+                Type: Image
+                Children:
+                - Name: Path
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  Value: "ns=4;%PROJECTDIR%/res/Alarms/Icons/Alarms_Icons_Urgent_Priority_Foreground.svg"
+                - Name: DynamicColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#ffffff"
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../FillColor_Foreground"
+              - Name: FillColor_Indicator
+                Type: BaseDataVariableType
+                DataType: Color
+                Value: "#e22028"
+              - Name: Indicator
+                Type: Image
+                Children:
+                - Name: Path
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  Value: "ns=4;%PROJECTDIR%/res/Alarms/Icons/Alarms_Icons_Urgent_Priority_Indicator.svg"
+                - Name: DynamicColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#e22028"
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../FillColor_Indicator"
+              - Name: Visible
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: true
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/Sts_Fault"
+          - Name: Alias_Panel_PID_Nivel1
+            Type: Alias
+            DataType: NodeId
+            Value: {"IdType":2,"Id":"346680fdb8f0f303232ab7904a4e2e42","Namespace":4}
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Objects/Remote_Library_Dani/Types/PID"
+          - Name: CFG_Button_ON
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+        - Name: Panel_PID_Nivel1_2
+          Type: Panel_PID_Nivel1
+          Children:
+          - Name: Fondo
+            Type: Rectangle
+            Children:
+            - Name: Checkbox_Cmd_On
+              Type: CheckBox
+              Children:
+              - Name: Checked
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/Cmd_On"
+            - Name: SpinBox_SP
+              Type: SpinBox
+              Children:
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: Double
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/In_SP"
+            - Name: Label_PV
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: StringFormatter1
+                  Type: StringFormatter
+                  Children:
+                  - Name: Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/In_PV"
+            - Name: Label_CV
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: StringFormatter1
+                  Type: StringFormatter
+                  Children:
+                  - Name: Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/Out_CV"
+            - Name: Checkbox_Controller_Active
+              Type: CheckBox
+              Children:
+              - Name: Checked
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/Sts_Controller_Active"
+            - Name: Button1
+              Type: Button
+              Children:
+              - Name: MouseClickEventHandler1
+                Type: EventHandler
+                Children:
+                - Name: ListenEventType
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+                - Name: MethodsToCall
+                  Type: BaseObjectType
+                  Children:
+                  - Name: MethodContainer1
+                    Type: BaseObjectType
+                    Children:
+                    - Name: ObjectPointer
+                      Type: NodePointer
+                      DataType: NodeId
+                      Value: "/Objects/Commands/UICommands"
+                      Children:
+                      - Name: Kind
+                        Type: PropertyType
+                        DataType: NodeId
+                        Value: "/Types/ObjectTypes/BaseObjectType"
+                    - Name: Method
+                      Type: BaseDataVariableType
+                      DataType: String
+                      Value: "OpenDialog"
+                    - Name: InputArguments
+                      Type: BaseObjectType
+                      Children:
+                      - Name: Dialog
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                        Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_PID"
+                      - Name: AliasNode
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                        ValueRank: ScalarOrOneDimension
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "{Alias_Panel_PID_Nivel1}@NodeId"
+                      - Name: ParentItem
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "../../../../..@NodeId"
+                    - Name: OutputArguments
+                      Type: BaseObjectType
+                      Children:
+                      - Name: DialogNodeId
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                - Name: EventArguments
+                  Type: MouseClickEvent
+                  Children:
+                  - Name: EventId
+                    Type: PropertyType
+                    DataType: ByteString
+                  - Name: EventType
+                    Type: PropertyType
+                    DataType: NodeId
+                  - Name: SourceNode
+                    Type: PropertyType
+                    DataType: NodeId
+                  - Name: SourceName
+                    Type: PropertyType
+                    DataType: String
+                  - Name: Time
+                    Type: PropertyType
+                    DataType: UtcTime
+                  - Name: ReceiveTime
+                    Type: PropertyType
+                    DataType: UtcTime
+                  - Name: Message
+                    Type: PropertyType
+                    DataType: LocalizedText
+                  - Name: Severity
+                    Type: PropertyType
+                    DataType: UInt16
+              - Name: Visible
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: true
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../CFG_Button_ON"
+            - Name: UrgentPriority_Error
+              Type: ScaleLayout
+              WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+              Children:
+              - Name: FillColor_Foreground
+                Type: BaseDataVariableType
+                DataType: Color
+                Value: "#ffffff"
+              - Name: OriginalWidth
+                Type: BaseVariableType
+                DataType: Size
+                Value: 24.0
+              - Name: OriginalHeight
+                Type: BaseVariableType
+                DataType: Size
+                Value: 24.0
+              - Name: Foreground
+                Type: Image
+                Children:
+                - Name: Path
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  Value: "ns=4;%PROJECTDIR%/res/Alarms/Icons/Alarms_Icons_Urgent_Priority_Foreground.svg"
+                - Name: DynamicColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#ffffff"
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../FillColor_Foreground"
+              - Name: FillColor_Indicator
+                Type: BaseDataVariableType
+                DataType: Color
+                Value: "#e22028"
+              - Name: Indicator
+                Type: Image
+                Children:
+                - Name: Path
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  Value: "ns=4;%PROJECTDIR%/res/Alarms/Icons/Alarms_Icons_Urgent_Priority_Indicator.svg"
+                - Name: DynamicColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#e22028"
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../FillColor_Indicator"
+              - Name: Visible
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: true
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/Sts_Fault"
+          - Name: Alias_Panel_PID_Nivel1
+            Type: Alias
+            DataType: NodeId
+            Value: {"IdType":2,"Id":"9110ffcf5a03bb28dd2ccbd8ef7738e2","Namespace":4}
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Objects/Remote_Library_Dani/Types/PID"
+          - Name: CFG_Button_ON
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+        - Name: Panel_PID_Nivel1_3
+          Type: Panel_PID_Nivel1
+          Children:
+          - Name: Fondo
+            Type: Rectangle
+            Children:
+            - Name: Checkbox_Cmd_On
+              Type: CheckBox
+              Children:
+              - Name: Checked
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/Cmd_On"
+            - Name: SpinBox_SP
+              Type: SpinBox
+              Children:
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: Double
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/In_SP"
+            - Name: Label_PV
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: StringFormatter1
+                  Type: StringFormatter
+                  Children:
+                  - Name: Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/In_PV"
+            - Name: Label_CV
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: StringFormatter1
+                  Type: StringFormatter
+                  Children:
+                  - Name: Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/Out_CV"
+            - Name: Checkbox_Controller_Active
+              Type: CheckBox
+              Children:
+              - Name: Checked
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/Sts_Controller_Active"
+            - Name: Button1
+              Type: Button
+              Children:
+              - Name: MouseClickEventHandler1
+                Type: EventHandler
+                Children:
+                - Name: ListenEventType
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+                - Name: MethodsToCall
+                  Type: BaseObjectType
+                  Children:
+                  - Name: MethodContainer1
+                    Type: BaseObjectType
+                    Children:
+                    - Name: ObjectPointer
+                      Type: NodePointer
+                      DataType: NodeId
+                      Value: "/Objects/Commands/UICommands"
+                      Children:
+                      - Name: Kind
+                        Type: PropertyType
+                        DataType: NodeId
+                        Value: "/Types/ObjectTypes/BaseObjectType"
+                    - Name: Method
+                      Type: BaseDataVariableType
+                      DataType: String
+                      Value: "OpenDialog"
+                    - Name: InputArguments
+                      Type: BaseObjectType
+                      Children:
+                      - Name: Dialog
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                        Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_PID"
+                      - Name: AliasNode
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                        ValueRank: ScalarOrOneDimension
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "{Alias_Panel_PID_Nivel1}@NodeId"
+                      - Name: ParentItem
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "../../../../..@NodeId"
+                    - Name: OutputArguments
+                      Type: BaseObjectType
+                      Children:
+                      - Name: DialogNodeId
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                - Name: EventArguments
+                  Type: MouseClickEvent
+                  Children:
+                  - Name: EventId
+                    Type: PropertyType
+                    DataType: ByteString
+                  - Name: EventType
+                    Type: PropertyType
+                    DataType: NodeId
+                  - Name: SourceNode
+                    Type: PropertyType
+                    DataType: NodeId
+                  - Name: SourceName
+                    Type: PropertyType
+                    DataType: String
+                  - Name: Time
+                    Type: PropertyType
+                    DataType: UtcTime
+                  - Name: ReceiveTime
+                    Type: PropertyType
+                    DataType: UtcTime
+                  - Name: Message
+                    Type: PropertyType
+                    DataType: LocalizedText
+                  - Name: Severity
+                    Type: PropertyType
+                    DataType: UInt16
+              - Name: Visible
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: true
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../CFG_Button_ON"
+            - Name: UrgentPriority_Error
+              Type: ScaleLayout
+              WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+              Children:
+              - Name: FillColor_Foreground
+                Type: BaseDataVariableType
+                DataType: Color
+                Value: "#ffffff"
+              - Name: OriginalWidth
+                Type: BaseVariableType
+                DataType: Size
+                Value: 24.0
+              - Name: OriginalHeight
+                Type: BaseVariableType
+                DataType: Size
+                Value: 24.0
+              - Name: Foreground
+                Type: Image
+                Children:
+                - Name: Path
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  Value: "ns=4;%PROJECTDIR%/res/Alarms/Icons/Alarms_Icons_Urgent_Priority_Foreground.svg"
+                - Name: DynamicColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#ffffff"
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../FillColor_Foreground"
+              - Name: FillColor_Indicator
+                Type: BaseDataVariableType
+                DataType: Color
+                Value: "#e22028"
+              - Name: Indicator
+                Type: Image
+                Children:
+                - Name: Path
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  Value: "ns=4;%PROJECTDIR%/res/Alarms/Icons/Alarms_Icons_Urgent_Priority_Indicator.svg"
+                - Name: DynamicColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#e22028"
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../FillColor_Indicator"
+              - Name: Visible
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: true
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/Sts_Fault"
+          - Name: Alias_Panel_PID_Nivel1
+            Type: Alias
+            DataType: NodeId
+            Value: {"IdType":2,"Id":"93c84d64c7e6882494e05887e0a069bb","Namespace":4}
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Objects/Remote_Library_Dani/Types/PID"
+          - Name: CFG_Button_ON
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+        - Name: Panel_PID_Nivel1_4
+          Type: Panel_PID_Nivel1
+          Children:
+          - Name: Fondo
+            Type: Rectangle
+            Children:
+            - Name: Checkbox_Cmd_On
+              Type: CheckBox
+              Children:
+              - Name: Checked
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/Cmd_On"
+            - Name: SpinBox_SP
+              Type: SpinBox
+              Children:
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: Double
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/In_SP"
+            - Name: Label_PV
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: StringFormatter1
+                  Type: StringFormatter
+                  Children:
+                  - Name: Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/In_PV"
+            - Name: Label_CV
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: StringFormatter1
+                  Type: StringFormatter
+                  Children:
+                  - Name: Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/Out_CV"
+            - Name: Checkbox_Controller_Active
+              Type: CheckBox
+              Children:
+              - Name: Checked
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/Sts_Controller_Active"
+            - Name: Button1
+              Type: Button
+              Children:
+              - Name: MouseClickEventHandler1
+                Type: EventHandler
+                Children:
+                - Name: ListenEventType
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+                - Name: MethodsToCall
+                  Type: BaseObjectType
+                  Children:
+                  - Name: MethodContainer1
+                    Type: BaseObjectType
+                    Children:
+                    - Name: ObjectPointer
+                      Type: NodePointer
+                      DataType: NodeId
+                      Value: "/Objects/Commands/UICommands"
+                      Children:
+                      - Name: Kind
+                        Type: PropertyType
+                        DataType: NodeId
+                        Value: "/Types/ObjectTypes/BaseObjectType"
+                    - Name: Method
+                      Type: BaseDataVariableType
+                      DataType: String
+                      Value: "OpenDialog"
+                    - Name: InputArguments
+                      Type: BaseObjectType
+                      Children:
+                      - Name: Dialog
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                        Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_PID"
+                      - Name: AliasNode
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                        ValueRank: ScalarOrOneDimension
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "{Alias_Panel_PID_Nivel1}@NodeId"
+                      - Name: ParentItem
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "../../../../..@NodeId"
+                    - Name: OutputArguments
+                      Type: BaseObjectType
+                      Children:
+                      - Name: DialogNodeId
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                - Name: EventArguments
+                  Type: MouseClickEvent
+                  Children:
+                  - Name: EventId
+                    Type: PropertyType
+                    DataType: ByteString
+                  - Name: EventType
+                    Type: PropertyType
+                    DataType: NodeId
+                  - Name: SourceNode
+                    Type: PropertyType
+                    DataType: NodeId
+                  - Name: SourceName
+                    Type: PropertyType
+                    DataType: String
+                  - Name: Time
+                    Type: PropertyType
+                    DataType: UtcTime
+                  - Name: ReceiveTime
+                    Type: PropertyType
+                    DataType: UtcTime
+                  - Name: Message
+                    Type: PropertyType
+                    DataType: LocalizedText
+                  - Name: Severity
+                    Type: PropertyType
+                    DataType: UInt16
+              - Name: Visible
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: true
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../CFG_Button_ON"
+            - Name: UrgentPriority_Error
+              Type: ScaleLayout
+              WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+              Children:
+              - Name: FillColor_Foreground
+                Type: BaseDataVariableType
+                DataType: Color
+                Value: "#ffffff"
+              - Name: OriginalWidth
+                Type: BaseVariableType
+                DataType: Size
+                Value: 24.0
+              - Name: OriginalHeight
+                Type: BaseVariableType
+                DataType: Size
+                Value: 24.0
+              - Name: Foreground
+                Type: Image
+                Children:
+                - Name: Path
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  Value: "ns=4;%PROJECTDIR%/res/Alarms/Icons/Alarms_Icons_Urgent_Priority_Foreground.svg"
+                - Name: DynamicColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#ffffff"
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../FillColor_Foreground"
+              - Name: FillColor_Indicator
+                Type: BaseDataVariableType
+                DataType: Color
+                Value: "#e22028"
+              - Name: Indicator
+                Type: Image
+                Children:
+                - Name: Path
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                  Value: "ns=4;%PROJECTDIR%/res/Alarms/Icons/Alarms_Icons_Urgent_Priority_Indicator.svg"
+                - Name: DynamicColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#e22028"
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../FillColor_Indicator"
+              - Name: Visible
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: true
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Alias_Panel_PID_Nivel1}/Tag_AOI_PID_ATune/Sts_Fault"
+          - Name: Alias_Panel_PID_Nivel1
+            Type: Alias
+            DataType: NodeId
+            Value: {"IdType":2,"Id":"0a07b0f912777a8cd7e971b7988d6117","Namespace":4}
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Objects/Remote_Library_Dani/Types/PID"
+          - Name: CFG_Button_ON
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+    - File: PID_Paneles_Principales/PID_Paneles_Principales.yaml
+    - File: PID_Paneles_Auxiliares/PID_Paneles_Auxiliares.yaml
