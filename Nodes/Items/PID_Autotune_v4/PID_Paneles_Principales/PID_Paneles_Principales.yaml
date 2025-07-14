@@ -215,7 +215,7 @@ Children:
                     - Name: Dialog
                       Type: BaseDataVariableType
                       DataType: NodeId
-                      Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_PID"
+                      Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune_v4/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_PID"
                     - Name: AliasNode
                       Type: BaseDataVariableType
                       DataType: NodeId
@@ -388,7 +388,7 @@ Children:
           - Name: Panel
             Type: NodePointer
             DataType: NodeId
-            Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_PID_InfoGrafic"
+            Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune_v4/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_PID_InfoGrafic"
             Children:
             - Name: Kind
               Type: PropertyType
@@ -404,7 +404,7 @@ Children:
           - Name: Panel
             Type: NodePointer
             DataType: NodeId
-            Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_KPIb"
+            Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune_v4/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_KPIb"
             Children:
             - Name: Kind
               Type: PropertyType
@@ -420,7 +420,7 @@ Children:
           - Name: Panel
             Type: NodePointer
             DataType: NodeId
-            Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_Fallo"
+            Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune_v4/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_Fallo"
             Children:
             - Name: Kind
               Type: PropertyType
@@ -436,7 +436,7 @@ Children:
           - Name: Panel
             Type: NodePointer
             DataType: NodeId
-            Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_Tune"
+            Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune_v4/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_Tune"
             Children:
             - Name: Kind
               Type: PropertyType
@@ -452,7 +452,7 @@ Children:
           - Name: Panel
             Type: NodePointer
             DataType: NodeId
-            Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_Tune_Status"
+            Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune_v4/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_Tune_Status"
             Children:
             - Name: Kind
               Type: PropertyType
@@ -468,7 +468,7 @@ Children:
           - Name: Panel
             Type: NodePointer
             DataType: NodeId
-            Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_Off_Mode"
+            Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune_v4/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_Off_Mode"
             Children:
             - Name: Kind
               Type: PropertyType
@@ -1499,7 +1499,7 @@ Children:
               Type: BaseDataVariableType
               DataType: NodeId
               Description: {"NamespaceIndex":8,"TextId":"OpenDialogDialogDescription"}
-              Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_PV"
+              Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune_v4/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_PV"
             - Name: AliasNode
               Type: BaseDataVariableType
               DataType: NodeId
@@ -2191,7 +2191,7 @@ Children:
               Type: BaseDataVariableType
               DataType: NodeId
               Description: {"NamespaceIndex":8,"TextId":"OpenDialogDialogDescription"}
-              Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_CV"
+              Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune_v4/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_CV"
             - Name: AliasNode
               Type: BaseDataVariableType
               DataType: NodeId

@@ -1,9 +1,9 @@
-Name: PID_Autotune
+Name: PID_Autotune_v4
 Type: FolderType
 Children:
 - Name: PID_Autotune
   Type: ObjectLibraryItem
-  Description: {"LocaleId":"","Text":"Importar toda la carpeta.\nAñadir al Display que se quiera el \"Listado_PIDs_Nivel1\"\nHay que usar un Model con la \n"}
+  Description: {"LocaleId":"","Text":"Importar toda la carpeta.\nMover el modelo PID a la carpeta MODEL\nMover el \"Conv_Bool_Gris_Negro\" a la carpeta CONVERTERS\nAñadir al Display que se quiera el \"Listado_PIDs_Nivel1\"\n\n\n"}
   Children:
   - Name: LibraryItemGuid
     Type: BaseDataVariableType
@@ -387,7 +387,7 @@ Children:
                     Type: BaseDataVariableType
                     DataType: NodeId
                     Description: {"NamespaceIndex":8,"TextId":"OpenDialogDialogDescription"}
-                    Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_PID"
+                    Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune_v4/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_PID"
                   - Name: AliasNode
                     Type: BaseDataVariableType
                     DataType: NodeId
@@ -732,7 +732,7 @@ Children:
                       - Name: Dialog
                         Type: BaseDataVariableType
                         DataType: NodeId
-                        Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_PID"
+                        Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune_v4/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_PID"
                       - Name: AliasNode
                         Type: BaseDataVariableType
                         DataType: NodeId
@@ -978,7 +978,7 @@ Children:
                       - Name: Dialog
                         Type: BaseDataVariableType
                         DataType: NodeId
-                        Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_PID"
+                        Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune_v4/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_PID"
                       - Name: AliasNode
                         Type: BaseDataVariableType
                         DataType: NodeId
@@ -1224,7 +1224,7 @@ Children:
                       - Name: Dialog
                         Type: BaseDataVariableType
                         DataType: NodeId
-                        Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_PID"
+                        Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune_v4/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_PID"
                       - Name: AliasNode
                         Type: BaseDataVariableType
                         DataType: NodeId
@@ -1470,7 +1470,7 @@ Children:
                       - Name: Dialog
                         Type: BaseDataVariableType
                         DataType: NodeId
-                        Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_PID"
+                        Value: "/Objects/Remote_Library_Dani/Items/PID_Autotune_v4/PID_Autotune/PID_Autotune/PID_Paneles_Principales/DialogBox_PID"
                       - Name: AliasNode
                         Type: BaseDataVariableType
                         DataType: NodeId
