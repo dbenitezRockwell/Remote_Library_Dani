@@ -13,42 +13,9 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt32
     Value: 1
-  - Name: Key_Value_Negro_Rojo
-    Id: g=196e643d2df67e812e56a45ab01b6839
-    Supertype: ValueMapConverter
-    ReferenceType: HasComponent
-    Children:
-    - Name: ns=2;Pairs
-      Type: BaseObjectType
-      ModellingRule: None
-      Children:
-      - Name: Pair
-        Type: ValueMapPair
-        ModellingRule: None
-        Children:
-        - Name: Key
-          Type: BaseDataVariableType
-          DataType: Boolean
-          ModellingRule: None
-        - Name: Value
-          Type: BaseDataVariableType
-          DataType: Color
-          ModellingRule: None
-          Value: "#000000"
-      - Name: Pair1
-        Type: ValueMapPair
-        ModellingRule: None
-        Children:
-        - Name: Key
-          Type: BaseDataVariableType
-          DataType: Boolean
-          ModellingRule: None
-          Value: true
-        - Name: Value
-          Type: BaseDataVariableType
-          DataType: Color
-          ModellingRule: None
-          Value: "#eb1a1a"
+  - Class: Reference
+    Type: HasOwnedType
+    Target: g=196e643d2df67e812e56a45ab01b6839
 - Name: Key_Value_Gris_Verde
   Type: ObjectLibraryItem
   Children:
@@ -60,39 +27,6 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt32
     Value: 1
-  - Name: Key_Value_Gris_Verde
-    Id: g=5308d5cb6c347dc36c0e2bc96e718adc
-    Supertype: ValueMapConverter
-    ReferenceType: HasComponent
-    Children:
-    - Name: ns=2;Pairs
-      Type: BaseObjectType
-      ModellingRule: None
-      Children:
-      - Name: Pair
-        Type: ValueMapPair
-        ModellingRule: None
-        Children:
-        - Name: Key
-          Type: BaseDataVariableType
-          DataType: Boolean
-          ModellingRule: None
-        - Name: Value
-          Type: BaseDataVariableType
-          DataType: Color
-          ModellingRule: None
-          Value: "#cfcfcf"
-      - Name: Pair1
-        Type: ValueMapPair
-        ModellingRule: None
-        Children:
-        - Name: Key
-          Type: BaseDataVariableType
-          DataType: Boolean
-          ModellingRule: None
-          Value: true
-        - Name: Value
-          Type: BaseDataVariableType
-          DataType: Color
-          ModellingRule: None
-          Value: "#1afe0d"
+  - Class: Reference
+    Type: HasOwnedType
+    Target: g=5308d5cb6c347dc36c0e2bc96e718adc

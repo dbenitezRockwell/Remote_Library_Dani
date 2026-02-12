@@ -13,16 +13,9 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt32
     Value: 2
-  - Name: DB_DataLoggerSIZE_v20250307
-    Id: g=845c93a4d544a98995cfa0d2d2902937
-    Supertype: NetLogic
-    ReferenceType: HasComponent
-    Children:
-    - Class: Method
-      Name: CalculateSize
-    - Name: Size
-      Type: BaseDataVariableType
-      DataType: Int32
+  - Class: Reference
+    Type: HasOwnedType
+    Target: g=845c93a4d544a98995cfa0d2d2902937
 - Name: Cop_Tag2Tag_If_SF_OK
   Type: ObjectLibraryItem
   Description: {"LocaleId":"","Text":"Copia un tag en otro tag mirando si el Store&Fordware de la base de datos esta OK."}
@@ -35,64 +28,9 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt32
     Value: 1
-  - Name: Cop_Tag2Tag_If_SF_OK
-    Id: g=1baf3103e7f8420063bc76f154f4cf1f
-    Supertype: NetLogic
-    Description: {"LocaleId":"en-US","Text":"Copia un tag sobre otra. Las TAGS se definen dentro del código ya que el NetLogix no deja \"entrar\" UDTs"}
-    ReferenceType: HasComponent
-    Children:
-    - Name: I_UpdateTime
-      Type: BaseDataVariableType
-      DataType: Int32
-      Value: 100
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../DataStores/EmbeddedDatabase/Status"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-    - Name: I_Enable
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: true
-    - Name: I_Messages_ON
-      Type: BaseDataVariableType
-      DataType: Boolean
-    - Class: Method
-      Name: TareaPrincipal
-    - Name: O_DB_Status
-      Type: BaseDataVariableType
-      DataType: Int32
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:PLC2Optix2DB/DB_Status"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-    - Name: O_DB_SF_Ready
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:PLC2Optix2DB/DB_SF_Ready"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
+  - Class: Reference
+    Type: HasOwnedType
+    Target: g=1baf3103e7f8420063bc76f154f4cf1f
 - Name: CustomSFLogic
   Type: ObjectLibraryItem
   Description: {"LocaleId":"","Text":"Código enviado por Fabio Rolandone. Para hacer el Store&Forware desde un DataLog interno a una base de datos SQL.\nHay que colocarlo dentro del Loggers que queramos salvaguardar."}
@@ -105,54 +43,6 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt32
     Value: 1
-  - Name: CustomSFLogic
-    Id: g=77705c53cb841208c83b70c7b22e6789
-    Supertype: NetLogic
-    ReferenceType: HasComponent
-    Children:
-    - Name: TargetStore
-      Type: NodePointer
-      DataType: NodeId
-      Value: {"IdType":2,"Id":"bd83b47d762a8ed9fbad688289141a09","Namespace":4}
-      Children:
-      - Name: Kind
-        Type: PropertyType
-        DataType: NodeId
-        Value: "/Types/ObjectTypes/BaseObjectType/Store"
-    - Name: TableName
-      Type: BaseDataVariableType
-      DataType: String
-    - Name: LastTimestamp
-      Type: BaseDataVariableType
-      DataType: DateTime
-    - Name: DeleteQuery
-      Type: BaseDataVariableType
-      DataType: String
-      Children:
-      - Name: StringFormatter1
-        Type: StringFormatter
-        Children:
-        - Name: Format
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"DELETE FROM {#tablename} WHERE Timestamp <= {#timestamp:sql_literal} "}
-        - Name: ns=2;Sourcetablename
-          Type: BaseDataVariableType
-          DataType: BaseDataType
-          ReferenceType: HasSource
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../TableName"
-        - Name: ns=2;Sourcetimestamp
-          Type: BaseDataVariableType
-          DataType: BaseDataType
-          ReferenceType: HasSource
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../LastTimestamp"
+  - Class: Reference
+    Type: HasOwnedType
+    Target: g=77705c53cb841208c83b70c7b22e6789
