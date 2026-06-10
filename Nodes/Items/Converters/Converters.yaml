@@ -1,0 +1,18 @@
+Name: Converters
+Type: FolderType
+Children:
+- Name: Conv_Bool_0Gris_1Negro
+  Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"**************** DB 20260610 ***********************\nConverter BOOL\n0 =  Gris\n1 = Negro"}
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "14412756a903c49acacc417f43540f1b"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Class: Reference
+    Type: HasOwnedType
+    Target: g=7504d09a81f723ed000445639496e6a0
