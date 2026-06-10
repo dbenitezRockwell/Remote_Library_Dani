@@ -12,7 +12,7 @@ Children:
   - Name: LibraryItemVersion
     Type: BaseDataVariableType
     DataType: UInt32
-    Value: 1
+    Value: 2
   - Name: PID_Autotune
     Type: FolderType
     Children:
@@ -24,3 +24,26 @@ Children:
       Target: g=e6d2747c22c9e84f35fe7701606a041c
     - File: PID_Paneles_Principales/PID_Paneles_Principales.yaml
     - File: PID_Paneles_Auxiliares/PID_Paneles_Auxiliares.yaml
+- Name: PID_Autotune1
+  Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"**************** DV 20260610 Importar toda la carpeta.***********************\nMover el modelo PID a la carpeta MODEL\nMover el \"Conv_Bool_Gris_Negro\" a la carpeta CONVERTERS\nAñadir al Display que se quiera el \"Listado_PIDs_Nivel1\"\n"}
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "8274e4ca4ba4c208bb79ca2f595b8530"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: PID_Autotune1
+    Type: FolderType
+    Children:
+    - Class: Reference
+      Type: HasOwnedType
+      Target: g=5dea7171834adbba219be23c3ec49e19
+    - Class: Reference
+      Type: HasOwnedType
+      Target: g=e6d2747c22c9e84f35fe7701606a041c
+    - File: PID_Paneles_Principales1/PID_Paneles_Principales1.yaml
+    - File: PID_Paneles_Auxiliares1/PID_Paneles_Auxiliares1.yaml

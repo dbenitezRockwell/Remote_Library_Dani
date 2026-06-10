@@ -1,0 +1,27 @@
+Name: PID_Paneles_Principales
+Type: FolderType
+Children:
+- Class: Reference
+  Type: HasOwnedType
+  Target: g=cc8a3a2ecf04d5c9df757b1bb3d21985
+- Class: Reference
+  Type: HasOwnedType
+  Target: g=cf823bf74fa555e6f2086feb32678a32
+- Class: Reference
+  Type: HasOwnedType
+  Target: g=704bd6332a32de88ced40e2e18da6365
+- Class: Reference
+  Type: HasOwnedType
+  Target: g=158b42de2b7a66f64dba2350bf962cc5
+- Class: Reference
+  Type: HasOwnedType
+  Target: g=1ebaa98af77eb52604dc88c6bcf2778a
+- Class: Reference
+  Type: HasOwnedType
+  Target: g=9da8650065433ef220bfb142c59adb0f
+- Class: Reference
+  Type: HasOwnedType
+  Target: g=61dbcb3cb03a91d512feeadfd31448a4
+- Class: Reference
+  Type: HasOwnedType
+  Target: g=52c0ddfab6738b34bdf965bc0ffe6ed9
