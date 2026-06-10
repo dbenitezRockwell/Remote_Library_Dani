@@ -16,3 +16,31 @@ Children:
   - Class: Reference
     Type: HasOwnedType
     Target: g=7504d09a81f723ed000445639496e6a0
+- Name: Conv_Bool_0Negro_1Rojo
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "2b3cb765995f4364f5a32c3af059f620"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Class: Reference
+    Type: HasOwnedType
+    Target: g=ca70c55722b4210eef07994de1b8790a
+- Name: Conv_Bool_0Gris_1Verde
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "2a3de98f27826834ed4b34f83c1230be"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Class: Reference
+    Type: HasOwnedType
+    Target: g=0978c0c82a87889be6af00e1346e3629

@@ -1,37 +1,13 @@
 Name: PID_Autotune_Dani_v4b
 Type: FolderType
 Children:
-- Name: UI_PID_Autotune
+- Name: PID_Autotune_Model
   Type: ObjectLibraryItem
-  Description: {"LocaleId":"","Text":"**************** DB 20260610 v4b    ***********************\nCopiar el Model_PID_xxx en la carpeta Model del proyecto.\nCopiar el Conv_PID_xxxx en la carpeta de Converters del proyecto\nCopiar el UI_PID_xxxx en la carpeta UI del proyecto.\n\nCrear variables en Model del tipo Model_PID_xxxx tantas como AOI tengamos en el controlador\nVincular las nuevas variables con las tags del controlador usadas en cada AOI\n\nAñadir al Display que se quiera el \"Listado_PIDs_Nivel1\"\nSeleccionar cada entrada del \"listado\" la tag del Model que se necesite."}
   Children:
   - Name: LibraryItemGuid
     Type: BaseDataVariableType
     DataType: Guid
-    Value: "49aa8232fdc98667a38fb9f8da88dbd6"
-  - Name: LibraryItemVersion
-    Type: BaseDataVariableType
-    DataType: UInt32
-    Value: 1
-  - Name: UI_PID_Autotune
-    Type: FolderType
-    Children:
-    - Class: Reference
-      Type: HasOwnedType
-      Target: g=c235e4e4d3ed958a59b40aed0f06cebc
-    - Class: Reference
-      Type: HasOwnedType
-      Target: g=61a363270440c2948a1608a6329e7dc2
-    - File: PID_Paneles_Principales/PID_Paneles_Principales.yaml
-    - File: PID_Paneles_Auxiliares/PID_Paneles_Auxiliares.yaml
-- Name: Model_PID_Autotune
-  Type: ObjectLibraryItem
-  Description: {"LocaleId":"","Text":"**************** DB 20260610 v4b    ***********************\nCopiar el Model_PID_xxx en la carpeta Model del proyecto.\nCopiar el Conv_PID_xxxx en la carpeta de Converters del proyecto\nCopiar el UI_PID_xxxx en la carpeta UI del proyecto.\n\nCrear variables en Model del tipo Model_PID_xxxx tantas como AOI tengamos en el controlador\nVincular las nuevas variables con las tags del controlador usadas en cada AOI\n\nAñadir al Display que se quiera el \"Listado_PIDs_Nivel1\"\nSeleccionar cada entrada del \"listado\" la tag del Model que se necesite."}
-  Children:
-  - Name: LibraryItemGuid
-    Type: BaseDataVariableType
-    DataType: Guid
-    Value: "36979ac1ab10a8e18992b1ceb2e580e4"
+    Value: "92a8be7db5f443ce18ec1f6441a81367"
   - Name: LibraryItemVersion
     Type: BaseDataVariableType
     DataType: UInt32
@@ -39,18 +15,41 @@ Children:
   - Class: Reference
     Type: HasOwnedType
     Target: g=f190d8ae45ae8c4f43a4f7095afbfa14
-- Name: Conv_PID_Bool_0Gris_1Negro
+- Name: PID_Linea_Bool_0Gris_1Negro_Converter
   Type: ObjectLibraryItem
-  Description: {"LocaleId":"","Text":"**************** DB 20260610 v4b    ***********************\nCopiar el Model_PID_xxx en la carpeta Model del proyecto.\nCopiar el Conv_PID_xxxx en la carpeta de Converters del proyecto\nCopiar el UI_PID_xxxx en la carpeta UI del proyecto.\n\nCrear variables en Model del tipo Model_PID_xxxx tantas como AOI tengamos en el controlador\nVincular las nuevas variables con las tags del controlador usadas en cada AOI\n\nAñadir al Display que se quiera el \"Listado_PIDs_Nivel1\"\nSeleccionar cada entrada del \"listado\" la tag del Model que se necesite."}
   Children:
   - Name: LibraryItemGuid
     Type: BaseDataVariableType
     DataType: Guid
-    Value: "7213cc791fe3803787dd9e7493526ef4"
+    Value: "517a37b6cc2fabb35cd9217f11335d6a"
   - Name: LibraryItemVersion
     Type: BaseDataVariableType
     DataType: UInt32
     Value: 1
   - Class: Reference
     Type: HasOwnedType
-    Target: g=fadd2cb1de94fe915f4c54863955d432
+    Target: g=f3954706cf4994f9fb5fd92f880fd6e9
+- Name: PID_Autotune_UI
+  Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"**************** DB 20260610 v4b    ***********************\nVisualizador del AOI \"AOI_PID_ATune\" realizado por Martin\n************************************************************\n\nCopiar el xxx_Model \ten la carpeta Model del proyecto.\nCopiar el xxx_Converter \ten la carpeta Converters del proyecto\nCopiar el xxx_UI\ten la carpeta UI del proyecto.\n\nCrear variables en Model del tipo PID_Autotune_Model;  tantas como AOI tengamos en el controlador\nVincular las nuevas variables con las tags del controlador usadas en cada AOI\n\nAñadir al Display que se quiera el \"Listado_PIDs_Nivel1\"\nSeleccionar cada entrada del \"listado\" la tag del Model que se necesite."}
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "e6f1ea233d81d3098e1c712ebb8dbeed"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: PID_Autotune_UI
+    Type: FolderType
+    Children:
+    - Class: Reference
+      Type: HasOwnedType
+      Target: g=ad515f37c99926d667bc5b93b3fda32c
+    - Class: Reference
+      Type: HasOwnedType
+      Target: g=8ae84519bde3f47dc53d89d3c11c20db
+    - File: PID_Paneles_Principales/PID_Paneles_Principales.yaml
+    - File: PID_Paneles_Auxiliares/PID_Paneles_Auxiliares.yaml
+    - File: PID_Converters/PID_Converters.yaml

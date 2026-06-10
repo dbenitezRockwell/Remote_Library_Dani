@@ -45,7 +45,6 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt32
     Value: 1
-- File: KeyValueConverters/KeyValueConverters.yaml
 - Name: DB_DataLoggerFDK
   Type: ObjectLibraryItem
   Description: {"LocaleId":"","Text":"20240702\nCódigo que ha de \"colgar\" de un DATALOGGER.\nDe forma automatica, lee el ULTIMO dato de la base de datos y pone su valor sobre variables \"FDK_*\" que tiene creadas en el interface del Optix.\nSi se quiere añadir un dato al datalog, tambien hay que añadir una nueva variable  en el interface del Optix con el MISMO NOMBRE precedido de \"FDK_\"\nDaniel"}
