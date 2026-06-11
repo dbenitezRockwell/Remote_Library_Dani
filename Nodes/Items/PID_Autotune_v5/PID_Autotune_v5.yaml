@@ -1,0 +1,26 @@
+Name: PID_Autotune_v5
+Type: FolderType
+Children:
+- Name: PID_Autotune_UI
+  Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"**************** DB 20260611 v5    ***********************\nVisualizador del AOI \"AOI_PID_ATune\" realizado por Martin\n************************************************************\n\nCopiar la carpeta en el UI del proyecto.\n\nEl CommDriver que apunta al controlador ha de tener el \"Extended Properties\" activado.\nCrear variables en Model del tipo PID_Autotune_Model;  tantas como AOI tengamos en el controlador\nVincular las nuevas variables con las tags del controlador usadas en cada AOI\n\nAñadir al Display que se quiera el \"Panel_xxx_PID\"\nSeleccionar la variable del Model que se quiera representar\n"}
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "8a572e69895ba8705a8960cbf56734d6"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: PID_Autotune_UI
+    Type: FolderType
+    Children:
+    - File: Graphic_Symbols/Graphic_Symbols.yaml
+    - File: _Private_Elements_/_Private_Elements_.yaml
+  - Name: TypeDependencyLocations
+    Type: BaseVariableType
+    DataType: TypeLocation
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":77,"Namespace":3},"Body":{"nodeClass":8,"browseName":"PID_Autotune_Model","browsePath":["Model","Types"]}},{"TypeId":{"Id":77,"Namespace":3},"Body":{"nodeClass":8,"browseName":"PID_Linea_Bool_0Gris_1Negro_Converter","browsePath":["Converters"]}}]

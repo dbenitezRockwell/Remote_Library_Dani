@@ -1,0 +1,23 @@
+Name: NodePointer
+Type: FolderType
+Children:
+- Name: DB_Motor_Winget_NodePointer
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "e741046cc83de2ef97faf60cee6de51f"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Class: Reference
+    Type: HasOwnedType
+    Target: g=a47895b5ff90eff6fe50f64539ae34e1
+  - Name: TypeDependencyLocations
+    Type: BaseVariableType
+    DataType: TypeLocation
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":77,"Namespace":3},"Body":{"nodeClass":8,"browseName":"MyMotor","browsePath":["Model","Motores"]}}]

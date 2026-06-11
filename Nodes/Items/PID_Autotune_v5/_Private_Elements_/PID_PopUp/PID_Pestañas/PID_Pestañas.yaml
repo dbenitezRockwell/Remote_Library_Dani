@@ -1,0 +1,18 @@
+Name: PID_Pestañas
+Type: FolderType
+Children:
+- Class: Reference
+  Type: HasOwnedType
+  Target: g=ed987e2a4bd851a45e5cb045fb2ef06e
+- Class: Reference
+  Type: HasOwnedType
+  Target: g=0fc7f5cec8dfef6319969c032d3da8a4
+- Class: Reference
+  Type: HasOwnedType
+  Target: g=58a547bad5c4e9bef55f97127dd75b36
+- Class: Reference
+  Type: HasOwnedType
+  Target: g=5c8cefc6bf869cc870f2a3b04ee7c9b2
+- Class: Reference
+  Type: HasOwnedType
+  Target: g=dca2dcedfd6d17d77eef72e37e02e7da

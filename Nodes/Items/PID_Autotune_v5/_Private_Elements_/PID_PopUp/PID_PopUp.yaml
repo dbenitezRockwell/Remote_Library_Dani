@@ -1,0 +1,9 @@
+Name: PID_PopUp
+Type: FolderType
+Children:
+- Class: Reference
+  Type: HasOwnedType
+  Target: g=df704fc8fe0f4f1fdd33992403e0be18
+- File: PID_Pestañas/PID_Pestañas.yaml
+- File: PID_DialogBox_Auxilares/PID_DialogBox_Auxilares.yaml
+- File: PID_Paneles_Auxiliares/PID_Paneles_Auxiliares.yaml
