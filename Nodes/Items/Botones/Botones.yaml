@@ -1,0 +1,23 @@
+Name: Botones
+Type: FolderType
+Children:
+- Name: DB_Button_Winget
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "84a1d24cf9603f8ebc25e2383f0234c3"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Class: Reference
+    Type: HasOwnedType
+    Target: g=3c295ac7f56ffb8990b9fc8fad6c50c8
+  - Name: TypeDependencyLocations
+    Type: BaseVariableType
+    DataType: TypeLocation
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":77,"Namespace":3},"Body":{"nodeClass":8,"browseName":"KeyValue_Color_High","browsePath":["Converters"]}},{"TypeId":{"Id":77,"Namespace":3},"Body":{"nodeClass":8,"browseName":"KeyValue_Color_Low","browsePath":["Converters"]}}]
