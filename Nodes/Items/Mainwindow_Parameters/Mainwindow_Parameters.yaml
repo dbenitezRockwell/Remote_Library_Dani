@@ -1,0 +1,50 @@
+Name: Mainwindow_Parameters
+Type: FolderType
+Children:
+- Name: MainWindow_Parameters
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "75908b830027288a6ed3a3832b8d0974"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 2
+  - Class: Reference
+    Type: HasOwnedType
+    Target: g=30ab9fc2caa1ff60f4583614b366b704
+- Name: MainWindow_AuxTags
+  Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"1.- copiar en la carpeta de Model\n2.- En la MainWindow asignar las variables\n\n3.- Importar el contenedor con la visualizacion\n"}
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "c2558a3acb708363a227c1a016634928"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: MainWindow_AuxTags
+    Type: FolderType
+    Children:
+    - Name: MainWindow_FullScreemMode
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Description: {"LocaleId":"en-US","Text":"Pone la MainWindow a FULL"}
+    - Name: MainWindow_OnTopMode
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Description: {"LocaleId":"en-US","Text":"Pone la MainWindow ONTOP (en el caso de los PCs)"}
+    - Name: MainWindow_Width_atPowerUp
+      Type: BaseDataVariableType
+      DataType: Int32
+      Description: {"LocaleId":"en-US","Text":"Anchura con la que se inicia la aplicacion sin no esta en FullScreem"}
+      Value: 1000
+    - Name: MainWindow_Height_atPowerUp
+      Type: BaseDataVariableType
+      DataType: Int32
+      Description: {"LocaleId":"en-US","Text":"Altura con la que se inicia la aplicacion sin no esta en FullScreem"}
+      Value: 800

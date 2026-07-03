@@ -50,24 +50,16 @@ Project:
    Uri: 'urn:FTOptix:Store:Net'
    Module: FTOptix.Store.Net
    Version: 1.0
-  13:
-   Uri: 'urn:FTOptix:RAEtherNetIP'
-   Module: FTOptix.RAEtherNetIP
-   Version: 7.0
-  14:
-   Uri: 'urn:FTOptix:RAEtherNetIP:Net'
-   Module: FTOptix.RAEtherNetIP.Net
-   Version: 3.2
  Statistics:
-  TotalNodeCount: 2895
-  Objects: 536
-  ObjectTypes: 48
-  Variables: 2303
+  TotalNodeCount: 3229
+  Objects: 591
+  ObjectTypes: 54
+  Variables: 2576
   VariableTypes: 1
   DataTypes: 1
   Methods: 6
-  References: 58
+  References: 64
   ReferenceTypes: 0
-  Files: 18
+  Files: 19
  Nodes:
  - File: Nodes/Remote_Library_Dani.yaml

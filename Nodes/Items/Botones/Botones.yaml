@@ -1,23 +1,90 @@
 Name: Botones
 Type: FolderType
 Children:
-- Name: DB_Button_Winget
+- Name: _Button_MQ_Logo
   Type: ObjectLibraryItem
   Children:
   - Name: LibraryItemGuid
     Type: BaseDataVariableType
     DataType: Guid
-    Value: "84a1d24cf9603f8ebc25e2383f0234c3"
+    Value: "ea26764e561b019145f968022076f5ca"
   - Name: LibraryItemVersion
     Type: BaseDataVariableType
     DataType: UInt32
     Value: 1
   - Class: Reference
     Type: HasOwnedType
-    Target: g=3c295ac7f56ffb8990b9fc8fad6c50c8
-  - Name: TypeDependencyLocations
-    Type: BaseVariableType
-    DataType: TypeLocation
-    ValueRank: OneDimension
-    ArrayDimensions: [0]
-    Value: [{"TypeId":{"Id":77,"Namespace":3},"Body":{"nodeClass":8,"browseName":"KeyValue_Color_High","browsePath":["Converters"]}},{"TypeId":{"Id":77,"Namespace":3},"Body":{"nodeClass":8,"browseName":"KeyValue_Color_Low","browsePath":["Converters"]}}]
+    Target: g=b7a6fcbe692e5528c096fed5aa2d760f
+- Name: _Button_Bool_Toggle
+  Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"Boton con dos imagenes"}
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "aad77e1dee93c47d67f88473e103b6a2"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Class: Reference
+    Type: HasOwnedType
+    Target: g=8ba3cdef66df371c4f144b433530bba7
+- Name: _Button_Bool_Momentaneo
+  Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"Boton con dos imagenes y visualizacion independiente"}
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "b776a12dd2372553bd5503b93febd68a"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Class: Reference
+    Type: HasOwnedType
+    Target: g=01e1b426584476998d2d5689643b1d24
+- Name: _Button_Goto_Menu
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "60c1b772a4b66f87462d388fff782d94"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Class: Reference
+    Type: HasOwnedType
+    Target: g=ec3b70ec8055937684df463142ea5081
+- Name: _Button_Goto_
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "c3bc5ca5b8214af5dc7af6a4b0e738dc"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Class: Reference
+    Type: HasOwnedType
+    Target: g=ee055a231f714ba4d675dd797a77f0f6
+- Name: _Button_Bool_Color_Desde_PLC
+  Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"Boton booleano con el color definido por una variable del controlador.\n"}
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "5934fcf9a9ca768b36a5445a05bd7968"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Class: Reference
+    Type: HasOwnedType
+    Target: g=567454cc978fce76d9935259800ee89f
