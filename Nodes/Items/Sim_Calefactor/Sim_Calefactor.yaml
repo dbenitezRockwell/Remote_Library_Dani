@@ -1,0 +1,26 @@
+Name: Sim_Calefactor
+Type: FolderType
+Children:
+- Name: Sim_Calefactor_UI
+  Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"**************** DB 20261006 v1    ***********************\nVisualizador del AOI Calefactor que simula la perdida de calor de un sistema de sellado\n************************************************************\n\nCopiar la carpeta en el UI del proyecto."}
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "c21d823c6cbd0ac94a2958e9c0957c77"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: Sim_Calefactor_UI
+    Type: FolderType
+    Children:
+    - File: Graphic_Symbols/Graphic_Symbols.yaml
+    - File: _Private_Elements_/_Private_Elements_.yaml
+  - Name: TypeDependencyLocations
+    Type: BaseVariableType
+    DataType: TypeLocation
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":77,"Namespace":3},"Body":{"nodeClass":8,"browseName":"Sim_Calefactor_Model","browsePath":["Model","Types"]}},{"TypeId":{"Id":77,"Namespace":3},"Body":{"nodeClass":8,"browseName":"UrgentPriority","browsePath":["UI","PID_Autotune_UI","<Private Elements>","Folder_Iconos"]}},{"TypeId":{"Id":77,"Namespace":3},"Body":{"nodeClass":8,"browseName":"Panel_Dato_Horizontal","browsePath":["UI","<DB Objetos Comunes>","Paneles_Auxiliares"]}}]

@@ -1,0 +1,5 @@
+Name: <Private Elements>
+Type: FolderType
+Children:
+- File: Sim_Calefactor_PopUp/Sim_Calefactor_PopUp.yaml
+- File: Folder_Iconos/Folder_Iconos.yaml

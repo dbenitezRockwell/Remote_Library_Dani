@@ -1,0 +1,6 @@
+Name: Graphic Symbols
+Type: FolderType
+Children:
+- Class: Reference
+  Type: HasOwnedType
+  Target: g=57128db15cbd8590733eea4791d43250

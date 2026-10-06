@@ -1,0 +1,6 @@
+Name: Sim_Calefactor_PopUp
+Type: FolderType
+Children:
+- Class: Reference
+  Type: HasOwnedType
+  Target: g=b09cb545da14b62e7dab2f6d9fd4bfbc

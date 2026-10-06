@@ -1,0 +1,6 @@
+Name: Folder_Iconos
+Type: FolderType
+Children:
+- Class: Reference
+  Type: HasOwnedType
+  Target: g=82af911b5f8246e00edd9195802ca9a9
