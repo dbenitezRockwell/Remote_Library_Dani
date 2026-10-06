@@ -51,15 +51,15 @@ Project:
    Module: FTOptix.Store.Net
    Version: 1.0
  Statistics:
-  TotalNodeCount: 3229
-  Objects: 591
-  ObjectTypes: 54
-  Variables: 2576
+  TotalNodeCount: 3813
+  Objects: 657
+  ObjectTypes: 55
+  Variables: 3093
   VariableTypes: 1
   DataTypes: 1
   Methods: 6
-  References: 64
+  References: 60
   ReferenceTypes: 0
-  Files: 19
+  Files: 18
  Nodes:
  - File: Nodes/Remote_Library_Dani.yaml
