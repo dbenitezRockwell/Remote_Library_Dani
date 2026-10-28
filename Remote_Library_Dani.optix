@@ -7,7 +7,7 @@ Project:
  Company: ''
  Copyright: ''
  FormatVersion: 1
- ProductVersion: 1.7
+ ProductVersion: 1.8
  CoreVersion: 5.0
  Dependencies:
   2:
@@ -17,7 +17,7 @@ Project:
   3:
    Uri: 'urn:FTOptix:HMIProject'
    Module: FTOptix.HMIProject
-   Version: 9.0
+   Version: 11.0
   5:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
@@ -33,15 +33,15 @@ Project:
   8:
    Uri: 'urn:FTOptix:UI'
    Module: FTOptix.UI
-   Version: 21.2
+   Version: 22.0
   9:
    Uri: 'urn:FTOptix:UI:Net'
    Module: FTOptix.UI.Net
-   Version: 21.2
+   Version: 22.0
   10:
    Uri: 'urn:FTOptix:HMIProject:Net'
    Module: FTOptix.HMIProject.Net
-   Version: 5.0
+   Version: 6.0
   11:
    Uri: 'urn:FTOptix:Store'
    Module: FTOptix.Store
@@ -50,16 +50,24 @@ Project:
    Uri: 'urn:FTOptix:Store:Net'
    Module: FTOptix.Store.Net
    Version: 1.0
+  13:
+   Uri: 'urn:FTOptix:RAEtherNetIP'
+   Module: FTOptix.RAEtherNetIP
+   Version: 7.0
+  14:
+   Uri: 'urn:FTOptix:RAEtherNetIP:Net'
+   Module: FTOptix.RAEtherNetIP.Net
+   Version: 3.2
  Statistics:
-  TotalNodeCount: 4432
-  Objects: 759
-  ObjectTypes: 59
-  Variables: 3606
-  VariableTypes: 1
-  DataTypes: 1
+  TotalNodeCount: 4779
+  Objects: 775
+  ObjectTypes: 60
+  Variables: 3926
+  VariableTypes: 6
+  DataTypes: 6
   Methods: 6
-  References: 64
+  References: 75
   ReferenceTypes: 0
-  Files: 23
+  Files: 31
  Nodes:
  - File: Nodes/Remote_Library_Dani.yaml

@@ -12,7 +12,7 @@ Children:
   - Name: LibraryItemVersion
     Type: BaseDataVariableType
     DataType: UInt32
-    Value: 1
+    Value: 2
   - Name: PID_Autotune_UI1
     Type: FolderType
     Children:

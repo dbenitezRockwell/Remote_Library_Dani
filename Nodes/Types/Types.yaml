@@ -2588,7 +2588,7 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"IdType":2,"Id":"46ac911a6f09e16442f427c2d8982a98","Namespace":4}
+      Value: "/Objects/Remote_Library_Dani/Types/AOI_PID_ATune"
   - Name: Tag_PidData
     Type: Alias
     DataType: NodeId
@@ -2597,7 +2597,7 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"IdType":2,"Id":"6ea5fb1efc3c466e9b3519065e80928c","Namespace":4}
+      Value: "/Objects/Remote_Library_Dani/Types/UDT_Pid"
 - Name: PID_Linea_Bool_0Gris_1Negro_Converter
   Id: g=f9f0f55b36d6e0c4e54fb5d94aab1775
   Supertype: ValueMapConverter
@@ -2691,7 +2691,6 @@ Children:
   - Name: Alias_DialogBox_PID
     Type: Alias
     DataType: NodeId
-    Value: {"IdType":2,"Id":"346680fdb8f0f303232ab7904a4e2e42","Namespace":4}
     Children:
     - Name: Kind
       Type: PropertyType
@@ -18065,3 +18064,1815 @@ Children:
     DataType: VerticalAlignment
     ModellingRule: Optional
     Value: 2
+- Name: AOI_PID_ATune
+  Id: g=46ac911a6f09e16442f427c2d8982a98
+  Supertype: RAEtherNetIPTagStructure
+  DataType: AOI_PID_ATune1
+  ValueRank: Any
+  Children:
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EnableOut"
+  - Name: Cmd_On
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Cmd_On"
+  - Name: Cmd_OnHold
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Cmd_OnHold"
+  - Name: Cmd_OnTune
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Cmd_OnTune"
+  - Name: In_SP
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "In_SP"
+  - Name: In_PV
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "In_PV"
+  - Name: In_FF
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "In_FF"
+  - Name: Par_K
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Par_K"
+  - Name: Par_Ti
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Par_Ti"
+  - Name: Par_Td
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Par_Td"
+  - Name: Par_b
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Par_b"
+  - Name: Par_TuningRule
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Par_TuningRule"
+  - Name: Par_Reset
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Par_Reset"
+  - Name: Out_CV
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Out_CV"
+  - Name: Out_E
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Out_E"
+  - Name: Out_P
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Out_P"
+  - Name: Out_I
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Out_I"
+  - Name: Out_D
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Out_D"
+  - Name: Out_FF
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Out_FF"
+  - Name: Out_Ts
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Out_Ts"
+  - Name: Out_OpC
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Out_OpC"
+  - Name: Out_Timer
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Out_Timer"
+  - Name: Out_TuningStep
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Out_TuningStep"
+  - Name: Out_Tuning_TD
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Out_Tuning_TD"
+  - Name: Sts_Controller_Active
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Sts_Controller_Active"
+  - Name: Sts_Tuning_Active
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Sts_Tuning_Active"
+  - Name: Sts_Tuning_PeriodOk
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Sts_Tuning_PeriodOk"
+  - Name: Sts_Tuning_CvBiasOk
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Sts_Tuning_CvBiasOk"
+  - Name: Out_Tuning_NoOfPeriods
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Out_Tuning_NoOfPeriods"
+  - Name: Out_Tuning_CV_Bias
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Out_Tuning_CV_Bias"
+  - Name: Sts_Fault
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Sts_Fault"
+  - Name: Sts_Fault_PvMin
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Sts_Fault_PvMin"
+  - Name: Sts_Fault_PvMax
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Sts_Fault_PvMax"
+  - Name: Sts_Fault_InvalidData
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Sts_Fault_InvalidData"
+  - Name: Sts_FaultCode
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Sts_FaultCode"
+  - Name: Sts_Warning_Tuning_MaxNoPeriods
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Sts_Warning_Tuning_MaxNoPeriods"
+  - Name: Sts_Warning_Tuning_BiasAdapOff
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Sts_Warning_Tuning_BiasAdapOff"
+  - Name: _PV
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "_PV"
+- Name: UDT_Pid
+  Id: g=6ea5fb1efc3c466e9b3519065e80928c
+  Supertype: RAEtherNetIPTagStructure
+  DataType: UDT_Pid1
+  ValueRank: Any
+  Children:
+  - Name: Cfg
+    Type: UDT_PidCfg
+    DataType: UDT_PidCfg1
+    Children:
+    - Name: Ts
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Ts"
+    - Name: PV_Min
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PV_Min"
+    - Name: PV_Max
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PV_Max"
+    - Name: PV_FaultEnable
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PV_FaultEnable"
+    - Name: CV_Max
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CV_Max"
+    - Name: CV_Min
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CV_Min"
+    - Name: CV_OffMode
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CV_OffMode"
+    - Name: TrackingOnIfCtlIsOff
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "TrackingOnIfCtlIsOff"
+    - Name: Tune_Ts
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Tune_Ts"
+    - Name: Tune_CvStep
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Tune_CvStep"
+    - Name: Tune_PeriodErrorLimitRel
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Tune_PeriodErrorLimitRel"
+    - Name: Tune_CvBiasErrorLimitRel
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Tune_CvBiasErrorLimitRel"
+    - Name: Tune_CvBiasEnableAdjustment
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Tune_CvBiasEnableAdjustment"
+    - Name: Tune_CvBiasMaxPeriods2Ignor
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Tune_CvBiasMaxPeriods2Ignor"
+    - Name: Tune_MaxNoOfPeriods
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Tune_MaxNoOfPeriods"
+  - Name: Sts
+    Type: UDT_PidSts
+    DataType: UDT_PidSts1
+    Children:
+    - Name: T_Deadtime
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "T_Deadtime"
+    - Name: Ku
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Ku"
+    - Name: Pu
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Pu"
+    - Name: OmegaU
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "OmegaU"
+    - Name: Period1
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Period1"
+    - Name: Period2
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Period2"
+    - Name: PeriodeErrorRel
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PeriodeErrorRel"
+    - Name: T_Up
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "T_Up"
+    - Name: T_Down
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "T_Down"
+    - Name: CV_BiasErrorRel
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CV_BiasErrorRel"
+    - Name: CV_Start
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CV_Start"
+    - Name: CV_StartBiased
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "CV_StartBiased"
+    - Name: PV_Start
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PV_Start"
+    - Name: PV_AmplitudeMax
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PV_AmplitudeMax"
+    - Name: PV_AmplitudeMin
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PV_AmplitudeMin"
+    - Name: Amplitude
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Amplitude"
+    - Name: PV_Highlimit
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PV_Highlimit"
+    - Name: PV_Lowlimit
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PV_Lowlimit"
+    - Name: PV_NoiseLevel
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "PV_NoiseLevel"
+    - Name: Step
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Step"
+  - Name: TuneRule
+    Type: RAEtherNetIPTagStructure
+    DataType: UDT_PidTuningRuleData
+    ValueRank: OneDimension
+    ArrayDimensions: [9]
+    Children:
+    - Name: 0
+      Type: UDT_PidTuningRuleData1
+      DataType: UDT_PidTuningRuleData
+      Children:
+      - Name: Mode
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Mode"
+      - Name: K
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "K"
+      - Name: Ti
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Ti"
+      - Name: Td
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Td"
+    - Name: 1
+      Type: UDT_PidTuningRuleData1
+      DataType: UDT_PidTuningRuleData
+      Children:
+      - Name: Mode
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Mode"
+      - Name: K
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "K"
+      - Name: Ti
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Ti"
+      - Name: Td
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Td"
+    - Name: 2
+      Type: UDT_PidTuningRuleData1
+      DataType: UDT_PidTuningRuleData
+      Children:
+      - Name: Mode
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Mode"
+      - Name: K
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "K"
+      - Name: Ti
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Ti"
+      - Name: Td
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Td"
+    - Name: 3
+      Type: UDT_PidTuningRuleData1
+      DataType: UDT_PidTuningRuleData
+      Children:
+      - Name: Mode
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Mode"
+      - Name: K
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "K"
+      - Name: Ti
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Ti"
+      - Name: Td
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Td"
+    - Name: 4
+      Type: UDT_PidTuningRuleData1
+      DataType: UDT_PidTuningRuleData
+      Children:
+      - Name: Mode
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Mode"
+      - Name: K
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "K"
+      - Name: Ti
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Ti"
+      - Name: Td
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Td"
+    - Name: 5
+      Type: UDT_PidTuningRuleData1
+      DataType: UDT_PidTuningRuleData
+      Children:
+      - Name: Mode
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Mode"
+      - Name: K
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "K"
+      - Name: Ti
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Ti"
+      - Name: Td
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Td"
+    - Name: 6
+      Type: UDT_PidTuningRuleData1
+      DataType: UDT_PidTuningRuleData
+      Children:
+      - Name: Mode
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Mode"
+      - Name: K
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "K"
+      - Name: Ti
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Ti"
+      - Name: Td
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Td"
+    - Name: 7
+      Type: UDT_PidTuningRuleData1
+      DataType: UDT_PidTuningRuleData
+      Children:
+      - Name: Mode
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Mode"
+      - Name: K
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "K"
+      - Name: Ti
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Ti"
+      - Name: Td
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Td"
+    - Name: 8
+      Type: UDT_PidTuningRuleData1
+      DataType: UDT_PidTuningRuleData
+      Children:
+      - Name: Mode
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Mode"
+      - Name: K
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "K"
+      - Name: Ti
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Ti"
+      - Name: Td
+        Type: RAEtherNetIPTag
+        DataType: Float
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Td"
+- Class: DataType
+  Name: AOI_PID_ATune1
+  Id: g=2b46509bc9e5a37da58181ff6a7272a2
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "AOI_PID_ATune1",
+    "DataType": {
+     "IdType": 2,
+     "Id": "2b46509bc9e5a37da58181ff6a7272a2",
+     "Namespace": 4
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Cmd_On",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Cmd_OnHold",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Cmd_OnTune",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "In_SP",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "In_PV",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "In_FF",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Par_K",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Par_Ti",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Par_Td",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Par_b",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Par_TuningRule",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Par_Reset",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Out_CV",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Out_E",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Out_P",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Out_I",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Out_D",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Out_FF",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Out_Ts",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Out_OpC",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Out_Timer",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Out_TuningStep",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Out_Tuning_TD",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Sts_Controller_Active",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_Tuning_Active",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_Tuning_PeriodOk",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_Tuning_CvBiasOk",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Out_Tuning_NoOfPeriods",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Out_Tuning_CV_Bias",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Sts_Fault",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_Fault_PvMin",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_Fault_PvMax",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_Fault_InvalidData",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_FaultCode",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Sts_Warning_Tuning_MaxNoPeriods",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_Warning_Tuning_BiasAdapOff",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "_PV",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"AOI_PID_ATune"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: UDT_Pid1
+  Id: g=f368fd7313e36197920c531d2c0a2349
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "UDT_Pid1",
+    "DataType": {
+     "IdType": 2,
+     "Id": "f368fd7313e36197920c531d2c0a2349",
+     "Namespace": 4
+    },
+    "Fields": [{
+      "Name": "Cfg",
+      "DataType": {
+       "IdType": 2,
+       "Id": "46a33e7320f7b488bd1fc78d3b7fa327",
+       "Namespace": 4
+      }
+     },{
+      "Name": "Sts",
+      "DataType": {
+       "IdType": 2,
+       "Id": "23392e4b028f8a78af8e5ccb70bb2811",
+       "Namespace": 4
+      }
+     },{
+      "Name": "TuneRule",
+      "DataType": {
+       "IdType": 2,
+       "Id": "2ac07dfd2e1e5f1cdfbbeb9a3fac53f4",
+       "Namespace": 4
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [9]
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"UDT_Pid"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Name: UDT_PidCfg
+  Id: g=fc3de944be59701003b59c020f1c12b0
+  Supertype: RAEtherNetIPTagStructure
+  DataType: UDT_PidCfg1
+  ValueRank: Any
+  Children:
+  - Name: Ts
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ts"
+  - Name: PV_Min
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PV_Min"
+  - Name: PV_Max
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PV_Max"
+  - Name: PV_FaultEnable
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PV_FaultEnable"
+  - Name: CV_Max
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CV_Max"
+  - Name: CV_Min
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CV_Min"
+  - Name: CV_OffMode
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CV_OffMode"
+  - Name: TrackingOnIfCtlIsOff
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "TrackingOnIfCtlIsOff"
+  - Name: Tune_Ts
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Tune_Ts"
+  - Name: Tune_CvStep
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Tune_CvStep"
+  - Name: Tune_PeriodErrorLimitRel
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Tune_PeriodErrorLimitRel"
+  - Name: Tune_CvBiasErrorLimitRel
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Tune_CvBiasErrorLimitRel"
+  - Name: Tune_CvBiasEnableAdjustment
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Tune_CvBiasEnableAdjustment"
+  - Name: Tune_CvBiasMaxPeriods2Ignor
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Tune_CvBiasMaxPeriods2Ignor"
+  - Name: Tune_MaxNoOfPeriods
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Tune_MaxNoOfPeriods"
+- Class: DataType
+  Name: UDT_PidCfg1
+  Id: g=46a33e7320f7b488bd1fc78d3b7fa327
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "UDT_PidCfg1",
+    "DataType": {
+     "IdType": 2,
+     "Id": "46a33e7320f7b488bd1fc78d3b7fa327",
+     "Namespace": 4
+    },
+    "Fields": [{
+      "Name": "Ts",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "PV_Min",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "PV_Max",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "PV_FaultEnable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "CV_Max",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "CV_Min",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "CV_OffMode",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "TrackingOnIfCtlIsOff",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Tune_Ts",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Tune_CvStep",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Tune_PeriodErrorLimitRel",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Tune_CvBiasErrorLimitRel",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Tune_CvBiasEnableAdjustment",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Tune_CvBiasMaxPeriods2Ignor",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Tune_MaxNoOfPeriods",
+      "DataType": {
+       "Id": 6
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"UDT_PidCfg"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Name: UDT_PidSts
+  Id: g=2ef63dafa0b01c76662762fe4b6b2e8c
+  Supertype: RAEtherNetIPTagStructure
+  DataType: UDT_PidSts1
+  ValueRank: Any
+  Children:
+  - Name: T_Deadtime
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "T_Deadtime"
+  - Name: Ku
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ku"
+  - Name: Pu
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Pu"
+  - Name: OmegaU
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "OmegaU"
+  - Name: Period1
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Period1"
+  - Name: Period2
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Period2"
+  - Name: PeriodeErrorRel
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PeriodeErrorRel"
+  - Name: T_Up
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "T_Up"
+  - Name: T_Down
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "T_Down"
+  - Name: CV_BiasErrorRel
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CV_BiasErrorRel"
+  - Name: CV_Start
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CV_Start"
+  - Name: CV_StartBiased
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CV_StartBiased"
+  - Name: PV_Start
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PV_Start"
+  - Name: PV_AmplitudeMax
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PV_AmplitudeMax"
+  - Name: PV_AmplitudeMin
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PV_AmplitudeMin"
+  - Name: Amplitude
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Amplitude"
+  - Name: PV_Highlimit
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PV_Highlimit"
+  - Name: PV_Lowlimit
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PV_Lowlimit"
+  - Name: PV_NoiseLevel
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PV_NoiseLevel"
+  - Name: Step
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Step"
+- Class: DataType
+  Name: UDT_PidSts1
+  Id: g=23392e4b028f8a78af8e5ccb70bb2811
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "UDT_PidSts1",
+    "DataType": {
+     "IdType": 2,
+     "Id": "23392e4b028f8a78af8e5ccb70bb2811",
+     "Namespace": 4
+    },
+    "Fields": [{
+      "Name": "T_Deadtime",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Ku",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Pu",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "OmegaU",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Period1",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Period2",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "PeriodeErrorRel",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "T_Up",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "T_Down",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "CV_BiasErrorRel",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "CV_Start",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "CV_StartBiased",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "PV_Start",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "PV_AmplitudeMax",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "PV_AmplitudeMin",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Amplitude",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "PV_Highlimit",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "PV_Lowlimit",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "PV_NoiseLevel",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Step",
+      "DataType": {
+       "Id": 6
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"UDT_PidSts"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: UDT_PidTuningRuleData
+  Id: g=2ac07dfd2e1e5f1cdfbbeb9a3fac53f4
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "UDT_PidTuningRuleData",
+    "DataType": {
+     "IdType": 2,
+     "Id": "2ac07dfd2e1e5f1cdfbbeb9a3fac53f4",
+     "Namespace": 4
+    },
+    "Fields": [{
+      "Name": "Mode",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "K",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Ti",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Td",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"UDT_PidTuningRuleData"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Name: UDT_PidTuningRuleData1
+  Id: g=6e94d9aa650cf63a41106cacd594102a
+  Supertype: RAEtherNetIPTagStructure
+  DataType: UDT_PidTuningRuleData
+  ValueRank: Any
+  Children:
+  - Name: Mode
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Mode"
+  - Name: K
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "K"
+  - Name: Ti
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Ti"
+  - Name: Td
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Td"
+- Name: PID0
+  Id: g=5a98c6387c5182ff5421f5b387068057
+  Supertype: PID_Autotune_Model
+  Children:
+  - Name: Tag_AOI_PID_ATune
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"74ec88fb15e9bfddd0c5e00f84fe2908","Namespace":4}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Objects/Remote_Library_Dani/Types/AOI_PID_ATune"
+  - Name: Tag_PidData
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"c5c69d8ea775b59ebfde455767bf5059","Namespace":4}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Objects/Remote_Library_Dani/Types/UDT_Pid"

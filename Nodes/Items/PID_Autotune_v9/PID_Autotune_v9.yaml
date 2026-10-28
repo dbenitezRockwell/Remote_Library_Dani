@@ -1,0 +1,46 @@
+Name: PID_Autotune_v9
+Type: FolderType
+Children:
+- Name: PID0
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "1b0e12364087fb8ac428f101abc6f70f"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Class: Reference
+    Type: HasOwnedType
+    Target: g=5a98c6387c5182ff5421f5b387068057
+  - Name: TypeDependencyLocations
+    Type: BaseVariableType
+    DataType: TypeLocation
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":77,"Namespace":3},"Body":{"nodeClass":8,"browseName":"PID_Autotune_Model","browsePath":["Model","Types"]}}]
+- Name: PID_Autotune_UI
+  Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"**************** DB 20261028 v9    ***********************\nVisualizador del AOI \"AOI_PID_ATune\" realizado por Martin\n************************************************************"}
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "56898c5f4e115385ab0ee66f9fc54f7a"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: PID_Autotune_UI
+    Type: FolderType
+    Children:
+    - File: Graphic_Symbols/Graphic_Symbols.yaml
+    - File: _Private_Elements_/_Private_Elements_.yaml
+  - Name: TypeDependencyLocations
+    Type: BaseVariableType
+    DataType: TypeLocation
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":77,"Namespace":3},"Body":{"nodeClass":8,"browseName":"PID_Autotune_Model","browsePath":["Model","Types"]}},{"TypeId":{"Id":77,"Namespace":3},"Body":{"nodeClass":8,"browseName":"Panel_Dato_Vertical","browsePath":["UI","<DB Objetos Comunes>","Paneles_Auxiliares"]}},{"TypeId":{"Id":77,"Namespace":3},"Body":{"nodeClass":8,"browseName":"Panel_Bool_Vertical","browsePath":["UI","<DB Objetos Comunes>","Paneles_Auxiliares"]}},{"TypeId":{"Id":77,"Namespace":3},"Body":{"nodeClass":8,"browseName":"PID_Linea_Bool_0Gris_1Negro_Converter","browsePath":["Converters"]}},{"TypeId":{"Id":77,"Namespace":3},"Body":{"nodeClass":8,"browseName":"PID_Linea_Bool_0Gris_1Rojo_Converter","browsePath":["Converters"]}},{"TypeId":{"Id":77,"Namespace":3},"Body":{"nodeClass":8,"browseName":"Panel_Dato_Horizontal","browsePath":["UI","<DB Objetos Comunes>","Paneles_Auxiliares"]}},{"TypeId":{"Id":77,"Namespace":3},"Body":{"nodeClass":8,"browseName":"Panel_Bool_Horizontal","browsePath":["UI","<DB Objetos Comunes>","Paneles_Auxiliares"]}}]

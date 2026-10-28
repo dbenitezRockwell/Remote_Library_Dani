@@ -1,0 +1,9 @@
+Name: PID_DialogBox_Auxilares
+Type: FolderType
+Children:
+- Class: Reference
+  Type: HasOwnedType
+  Target: g=75a840f2a79f702dbf780acbded8bc47
+- Class: Reference
+  Type: HasOwnedType
+  Target: g=53ab84dce8b20ea94e30f5881f15a44f
